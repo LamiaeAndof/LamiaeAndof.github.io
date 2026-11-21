@@ -174,54 +174,30 @@
     $$("#notes .point").forEach(function (p, i) { tl.from(p, { scale: 0, opacity: 0, transformOrigin: "center", duration: 0.5 }, i * 1.2); });
   }
 
-  // ================= Chapitre 4 : frise horizontale =================
-  (function frise() {
-    var sec = $(".horizontal"), piste = $(".piste-h");
-    if (!sec || !piste) return;
-    var panneaux = $$(".panneau", piste), prec = $("#h-prec"), suiv = $("#h-suiv"), jauge = $(".barre-h i"), compteur = $(".controle-h output");
-    var st = null, index = 0;
-    function positions(max) { return panneaux.map(function (pn) { return Math.min(max, pn.offsetLeft - panneaux[0].offsetLeft); }); }
-    function majControles(p) {
-      // Étape = panneau le plus proche de la position réelle (les panneaux n'ont pas tous la même largeur)
-      var max = natif() ? piste.scrollWidth - piste.clientWidth : piste.scrollWidth - innerWidth, x = p * max, pos = positions(max), meilleur = 0;
-      pos.forEach(function (v, i) { if (Math.abs(v - x) < Math.abs(pos[meilleur] - x)) meilleur = i; });
-      index = meilleur;
-      if (jauge) jauge.style.transform = "scaleX(" + Math.max(0.04, p) + ")";
-      if (compteur) compteur.textContent = (index + 1) + " / " + panneaux.length;
-      if (prec) prec.disabled = p < 0.02;
-      if (suiv) suiv.disabled = p > 0.98;
-    }
-    function natif() { return !st; }
-    function aller(i) {
-      i = Math.max(0, Math.min(panneaux.length - 1, i));
-      if (natif()) {
-        piste.scrollTo({ left: panneaux[i].offsetLeft - panneaux[0].offsetLeft, behavior: reduit ? "auto" : "smooth" });
-      } else {
-        var max = piste.scrollWidth - innerWidth, x = Math.min(max, panneaux[i].offsetLeft - panneaux[0].offsetLeft);
-        var y = st.start + (st.end - st.start) * (max > 0 ? x / max : 0);
-        if (lenis) lenis.scrollTo(y + 1); else window.scrollTo({ top: y + 1, behavior: reduit ? "auto" : "smooth" });
-      }
-    }
-    if (prec) prec.addEventListener("click", function () { aller(index - 1); });
-    if (suiv) suiv.addEventListener("click", function () { aller(index + 1); });
-    sec.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowRight") { e.preventDefault(); aller(index + 1); }
-      if (e.key === "ArrowLeft") { e.preventDefault(); aller(index - 1); }
-    });
-    piste.addEventListener("scroll", function () {
-      if (!natif()) return;
-      var m = piste.scrollWidth - piste.clientWidth; majControles(m > 0 ? piste.scrollLeft / m : 0);
-    }, { passive: true });
-    if (anime) {
-      G.matchMedia().add({ grand: "(min-width: 861px)", petit: "(max-width: 860px)" }, function (ctx) {
-        if (ctx.conditions.petit) { sec.classList.add("h-natif"); st = null; majControles(0); return function () { sec.classList.remove("h-natif"); }; }
-        var tw = G.to(piste, { x: function () { return -(piste.scrollWidth - innerWidth); }, ease: "none",
-          scrollTrigger: { trigger: sec, start: "top top", end: function () { return "+=" + (piste.scrollWidth - innerWidth); },
-                           pin: true, scrub: 1, invalidateOnRefresh: true, anticipatePin: 1, onUpdate: function (s) { majControles(s.progress); } } });
-        st = tw.scrollTrigger; majControles(0);
-        return function () { st = null; };
+  // ================= Chapitre 4 : frise verticale (fil lumineux + étapes allumées) =================
+  (function chrono() {
+    var bloc = $(".chrono"), fil = $(".chrono .fil span"), etapes = $$(".etape-c");
+    if (!bloc || !fil) return;
+    var attente = false;
+    function maj() {
+      attente = false;
+      var r = bloc.getBoundingClientRect(), repere = innerHeight * 0.6;
+      var p = Math.max(0, Math.min(1, (repere - r.top) / r.height));
+      fil.style.setProperty("--p", p.toFixed(4));
+      etapes.forEach(function (e) {
+        var n = e.querySelector(".noeud").getBoundingClientRect();
+        e.classList.toggle("allume", n.top + n.height / 2 < repere);
       });
-    } else { sec.classList.add("h-natif"); majControles(0); }
+    }
+    addEventListener("scroll", function () { if (!attente) { attente = true; requestAnimationFrame(maj); } }, { passive: true });
+    addEventListener("resize", maj); maj();
+    if (anime) {
+      etapes.forEach(function (e, i) {
+        var t = e.querySelector(".texte-c"), m = e.querySelector(".media-c"), sens = i % 2 ? 1 : -1;
+        G.from(t, { x: 40 * sens, opacity: 0, duration: 0.9, ease: "power3.out", scrollTrigger: { trigger: e, start: "top 80%" } });
+        G.from(m, { x: -40 * sens, y: 20, scale: 0.96, opacity: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: e, start: "top 80%" } });
+      });
+    }
   })();
 
   // ================= Curseur personnalisé + inclinaison des cartes =================
