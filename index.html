@@ -1,40 +1,75 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Lamiae Andof — IA &amp; santé</title>
-<meta name="description" content="Lamiae Andof, ingénieure en IA. Je me spécialise en IA appliquée à la santé et à l'imagerie médicale.">
+<script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("theme");l=localStorage.getItem("langue")}catch(e){}if(t!=="light"&&t!=="dark")t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";d.setAttribute("data-theme",t);if(l!=="fr"&&l!=="en")l=(navigator.language||"fr").slice(0,2)==="en"?"en":"fr";d.lang=l})();</script>
+<title>Lamiae Andof — IA explicable, Computer Vision, IA en santé</title>
+<meta name="description" content="Lamiae Andof, ingénieure d'État en Data Science et IA (ENSA Tétouan, 2026). Computer Vision, IA générative et IA explicable appliquée à l'imagerie médicale.">
+<link rel="canonical" href="https://lamiaeandof.github.io/">
 <meta name="theme-color" content="#05070d">
-<meta property="og:title" content="Lamiae Andof — IA & santé">
-<meta property="og:description" content="Ingénieure en IA. Projet phare : IA explicable pour la détection de pneumonie sur radiographies thoraciques.">
-<meta property="og:image" content="https://lamiaeandof.github.io/projet/xray.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g'%3E%3Cstop offset='0' stop-color='%238f7bff'/%3E%3Cstop offset='1' stop-color='%233ad7ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='700' font-size='14' fill='%2305070d' text-anchor='middle'%3ELA%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lamiaeandof.github.io/">
+<meta property="og:title" content="Lamiae Andof — IA explicable et IA en santé">
+<meta property="og:description" content="Ingénieure en IA. Je construis des systèmes d'IA, et je veux comprendre ce qu'ils voient vraiment. Projet phare : IA explicable sur radiographies thoraciques.">
+<meta property="og:image" content="https://lamiaeandof.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portrait de Lamiae Andof et carte Grad-CAM d'une radiographie thoracique">
+<meta property="og:locale" content="fr_FR"><meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/sora-latin-3.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/profil.webp" fetchpriority="high">
 <link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Lamiae Andof","jobTitle":"Ingénieure d'État en Data Science, Big Data & IA","url":"https://lamiaeandof.github.io/","image":"https://lamiaeandof.github.io/img/profil.webp","email":"mailto:lamiaeandof3@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Fès","addressCountry":"MA"},"alumniOf":{"@type":"CollegeOrUniversity","name":"ENSA Tétouan, Université Abdelmalek Essaâdi"},"knowsAbout":["Computer Vision","Explainable AI","Medical imaging","Retrieval-Augmented Generation"],"sameAs":["https://github.com/LamiaeAndof","https://www.linkedin.com/in/lamiaeandof"]}</script>
 </head>
 <body>
+<a class="evitement" href="#contenu"><span class="fr">Aller au contenu</span><span class="en">Skip to content</span></a>
 <div class="progression" aria-hidden="true"></div>
 <div class="curseur" aria-hidden="true"></div><div class="anneau" aria-hidden="true"></div>
 
 <header class="nav">
   <div class="wrap">
-    <a class="monogramme" href="#moi"><b>LA</b><span>Lamiae Andof</span></a>
+    <a class="monogramme" href="#moi" aria-label="Lamiae Andof, accueil"><b aria-hidden="true">LA</b><span>Lamiae Andof</span></a>
     <nav class="chapitres" aria-label="Chapitres">
       <a href="#origines"><span class="fr">Origines</span><span class="en">Roots</span></a>
       <a href="#construit"><span class="fr">Expériences</span><span class="en">Experience</span></a>
       <a href="#sante"><span class="fr">Santé</span><span class="en">Health</span></a>
       <a href="#projet"><span class="fr">Projet phare</span><span class="en">Main project</span></a>
-      <a href="#vise"><span class="fr">Objectif</span><span class="en">Goal</span></a>
+      <a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
+      <a href="#vise"><span class="fr">Objectif</span><span class="en">Goals</span></a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="langue" type="button">EN</button>
+    <div class="commandes-nav">
+      <button class="bascule theme" type="button" aria-pressed="false" aria-label="Thème clair">
+        <svg class="ic-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="ic-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <span class="txt"><span class="fr">Thème</span><span class="en">Theme</span></span>
+      </button>
+      <button class="bascule langue" type="button" aria-label="Switch to English">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+        <span class="txt-l">EN</span>
+      </button>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Menu"><span aria-hidden="true"></span></button>
+    </div>
   </div>
 </header>
+<nav class="menu-mobile" id="menu-mobile" hidden aria-label="Menu">
+  <a href="#origines"><span class="fr">Origines</span><span class="en">Roots</span><small>2</small></a>
+  <a href="#construit"><span class="fr">Expériences</span><span class="en">Experience</span><small>3</small></a>
+  <a href="#sante"><span class="fr">Le tournant santé</span><span class="en">Turning to health</span><small>4</small></a>
+  <a href="#projet"><span class="fr">Projet phare</span><span class="en">Main project</span><small>5</small></a>
+  <a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span><small>+</small></a>
+  <a href="#engagement"><span class="fr">Engagements</span><span class="en">Involvement</span><small>+</small></a>
+  <a href="#certificats"><span class="fr">Certificats</span><span class="en">Certificates</span><small>+</small></a>
+  <a href="#vise"><span class="fr">Objectif</span><span class="en">Goals</span><small>6</small></a>
+  <a href="#contact">Contact<small>→</small></a>
+</nav>
 
-<main>
+<main id="contenu">
 <!-- ============ CHAPITRE 1 — JE SUIS LAMIAE ============ -->
 <section class="accueil chapitre" id="moi">
   <canvas id="reseau" aria-hidden="true"></canvas>
@@ -42,78 +77,109 @@
     <div>
       <p class="etiquette"><span class="fr">Chapitre 1 · Je suis Lamiae</span><span class="en">Chapter 1 · I am Lamiae</span></p>
       <h1 data-mots><span class="fr">Je suis Lamiae.</span><span class="en">I am Lamiae.</span></h1>
-      <p class="accroche fr">Ingénieure en IA. Je veux mettre l'IA au service de la santé : fiable, explicable, utile aux soignants.</p>
-      <p class="accroche en">AI engineer. I want to put AI at the service of health: reliable, explainable, useful to caregivers.</p>
+      <p class="specialites"><span>AI Engineer</span><span>Computer Vision</span><span>Explainable AI</span><span>Healthcare AI</span></p>
+      <p class="accroche fr">Je construis des systèmes d'IA. Ce qui m'intéresse le plus, c'est ce qu'ils comprennent, ce qu'ils manquent, et ce qu'ils peuvent vraiment apporter.</p>
+      <p class="accroche en">I build AI systems. What interests me most is what they understand, what they miss, and what they can truly bring.</p>
+      <p class="accroche-2 fr">Aujourd'hui, j'explore une direction qui me passionne : l'IA au service de la santé.</p>
+      <p class="accroche-2 en">Today, I am exploring a direction I care about deeply: AI in the service of health.</p>
       <div class="boutons">
-        <a class="btn plein" href="#projet"><span class="fr">Mon projet phare</span><span class="en">My main project</span> <span class="fleche">→</span></a>
-        <a class="btn" href="docs/CV_Lamiae_Andof.pdf"><span class="fr">CV (PDF)</span><span class="en">Resume (PDF, French)</span></a>
+        <a class="btn plein" href="#projet"><span class="fr">Explorer mon projet phare</span><span class="en">Explore my main project</span> <span class="fleche" aria-hidden="true">→</span></a>
+        <a class="btn" href="docs/CV_Lamiae_Andof.pdf" download><span class="fr">Télécharger mon CV</span><span class="en">Download my resume (FR)</span></a>
+        <a class="lien-discret" href="#projets"><span class="fr">Voir mes projets</span><span class="en">See my projects</span></a>
       </div>
     </div>
-    <div class="photo-halo"><img src="img/profil.webp" width="420" height="420" alt="Portrait de Lamiae Andof"></div>
+    <div class="photo-halo"><img src="img/profil.webp" width="420" height="420" alt="Portrait de Lamiae Andof" fetchpriority="high"></div>
   </div>
-  <div class="defiler" aria-hidden="true"><span class="fr">Défiler</span><span class="en">Scroll</span><i></i></div>
+  <a class="defiler" href="#reperes" aria-label="Continuer"><span class="fr">Défiler</span><span class="en">Scroll</span><i aria-hidden="true"></i></a>
 </section>
 
 <!-- Bandeau de logos -->
-<div class="bandeau" aria-label="Écoles et entreprises">
+<div class="bandeau" role="region" aria-label="Écoles et organisations de mon parcours">
   <div class="piste">
     <span class="tuile"><img src="img/logos/ensa_tetouan.webp" alt="ENSA Tétouan" width="200" height="200"></span>
     <span class="tuile"><img src="img/logos/ocp_solutions.webp" alt="OCP Solutions" width="200" height="200"></span>
     <span class="tuile"><img src="img/logos/cires_technologies.webp" alt="CIRES Technologies" width="200" height="200"></span>
     <span class="tuile"><img src="img/logos/marotrans.webp" alt="Marotrans" width="200" height="200"></span>
     <span class="tuile"><img src="img/logos/ocp_al_moutmir.webp" alt="OCP Al Moutmir" width="196" height="220"></span>
+    <span class="tuile large"><img src="img/logos/ministere_education_nationale.webp" alt="Ministère de l'Éducation nationale" width="420" height="220"></span>
     <span class="tuile"><img src="img/logos/ai_geeks.webp" alt="AI Geeks" width="400" height="400"></span>
-    <span class="tuile texte"><span class="fr">Ministère de l'Éducation nationale</span><span class="en">Ministry of National Education</span></span>
     <span class="tuile" aria-hidden="true"><img src="img/logos/ensa_tetouan.webp" alt="" width="200" height="200"></span>
     <span class="tuile" aria-hidden="true"><img src="img/logos/ocp_solutions.webp" alt="" width="200" height="200"></span>
     <span class="tuile" aria-hidden="true"><img src="img/logos/cires_technologies.webp" alt="" width="200" height="200"></span>
     <span class="tuile" aria-hidden="true"><img src="img/logos/marotrans.webp" alt="" width="200" height="200"></span>
     <span class="tuile" aria-hidden="true"><img src="img/logos/ocp_al_moutmir.webp" alt="" width="196" height="220"></span>
+    <span class="tuile large" aria-hidden="true"><img src="img/logos/ministere_education_nationale.webp" alt="" width="420" height="220"></span>
     <span class="tuile" aria-hidden="true"><img src="img/logos/ai_geeks.webp" alt="" width="400" height="400"></span>
-    <span class="tuile texte" aria-hidden="true"><span class="fr">Ministère de l'Éducation nationale</span><span class="en">Ministry of National Education</span></span>
   </div>
 </div>
 
-<!-- Chiffres clés -->
-<section class="wrap" style="padding-block:clamp(60px,9vw,110px)">
-  <div class="compteurs apparait">
-    <div><div class="chiffre grad" data-compteur="0.976" data-dec="3">0,976</div><p><span class="fr">AUC sur 624 radiographies jamais vues</span><span class="en">AUC on 624 never-seen X-rays</span></p></div>
-    <div><div class="chiffre"><span data-compteur="3">3</span><small>/390</small></div><p><span class="fr">pneumonies ratées par mon modèle</span><span class="en">pneumonias missed by my model</span></p></div>
-    <div><div class="chiffre"><span data-compteur="17.5" data-dec="1">17,5</span><small>/20</small></div><p><span class="fr">mention Très Bien, 14e sur 55</span><span class="en">highest honours, 14th of 55</span></p></div>
-    <div><div class="chiffre" data-compteur="182">182</div><p><span class="fr">véhicules suivis chez Marotrans</span><span class="en">vehicles tracked at Marotrans</span></p></div>
-    <div><div class="chiffre"><span data-compteur="10000">10 000</span><small>+</small></div><p><span class="fr">images annotées à Tanger Med</span><span class="en">images annotated at Tanger Med</span></p></div>
+<!-- Chiffres clés : deux histoires différentes -->
+<section class="wrap" id="reperes" style="padding-block:clamp(56px,8vw,100px)" aria-labelledby="t-reperes">
+  <h2 class="sr-only" id="t-reperes"><span class="fr">Chiffres clés</span><span class="en">Key figures</span></h2>
+  <div class="reperes">
+    <div class="carte repere-groupe apparait">
+      <header><h2><span class="fr">Résultats techniques</span><span class="en">Technical results</span></h2>
+        <p><span class="fr">Projet radiographies · test officiel, 624 images jamais vues</span><span class="en">X-ray project · official test set, 624 unseen images</span></p></header>
+      <div class="compteurs">
+        <div><div class="chiffre grad" data-compteur="0.976" data-dec="3">0,976</div><p><span class="fr">AUC-ROC (IC 95 % : 0,961–0,988)</span><span class="en">ROC AUC (95% CI: 0.961–0.988)</span></p></div>
+        <div><div class="chiffre"><span data-compteur="3">3</span><small>/390</small></div><p><span class="fr">pneumonies manquées (sensibilité 0,992)</span><span class="en">missed pneumonias (sensitivity 0.992)</span></p></div>
+        <div><div class="chiffre"><span data-compteur="44">44</span><small>/234</small></div><p><span class="fr">fausses alertes (spécificité 0,812)</span><span class="en">false alarms (specificity 0.812)</span></p></div>
+      </div>
+    </div>
+    <div class="carte repere-groupe apparait">
+      <header><h2><span class="fr">Repères de parcours</span><span class="en">Milestones</span></h2>
+        <p><span class="fr">Études et missions en entreprise</span><span class="en">Studies and company assignments</span></p></header>
+      <div class="compteurs">
+        <div><div class="chiffre"><span data-compteur="17.5" data-dec="1">17,5</span><small>/20</small></div><p><span class="fr">ma meilleure moyenne en cycle ingénieur, mention Très Bien (14e/55)</span><span class="en">my best average in the engineering cycle, highest honours (14th/55)</span></p></div>
+        <div><div class="chiffre"><span data-compteur="10000">10 000</span><small>+</small></div><p><span class="fr">images annotées pour la vision, CIRES · Tanger Med</span><span class="en">images annotated for vision, CIRES · Tanger Med</span></p></div>
+        <div><div class="chiffre" data-compteur="182">182</div><p><span class="fr">véhicules suivis sur la plateforme, Marotrans</span><span class="en">vehicles tracked on the platform, Marotrans</span></p></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ============ CHAPITRE 2 — D'OÙ JE VIENS ============ -->
-<section class="chapitre" id="origines">
+<section class="chapitre" id="origines" style="padding-top:clamp(40px,6vw,80px)">
   <div class="wrap">
     <p class="etiquette"><span class="fr">Chapitre 2 · D'où je viens</span><span class="en">Chapter 2 · Where I come from</span></p>
     <h2 data-mots><span class="fr">Une progression, année après année.</span><span class="en">Steady progress, year after year.</span></h2>
+    <p class="sous"><span class="fr">Je n'ai pas commencé en sachant exactement où j'allais. Mais chaque année m'a appris à aller plus loin.</span><span class="en">I did not start out knowing exactly where I was going. But every year taught me to go further.</span></p>
     <div class="jalons apparait">
-      <div class="jalon"><span class="tuile"><img src="img/logos/ensa_tetouan.webp" alt="ENSA Tétouan" width="200" height="200"></span><div><b>2020</b> <span class="fr">Bac, mention Très Bien</span><span class="en">Baccalaureate, highest honours</span></div></div>
-      <div class="jalon"><span class="tuile"><img src="img/logos/ensa_tetouan.webp" alt="" width="200" height="200"></span><div><b>2020–2023</b> <span class="fr">Cycle préparatoire, ENSA Tétouan</span><span class="en">Preparatory cycle, ENSA Tétouan</span></div></div>
-      <div class="jalon"><span class="tuile"><img src="img/logos/ensa_tetouan.webp" alt="" width="200" height="200"></span><div><b>2023–2026</b> <span class="fr">Ingénieure Data Science, Big Data &amp; IA</span><span class="en">Engineer, Data Science, Big Data &amp; AI</span></div></div>
+      <div class="jalon"><span class="tuile"><img src="img/logos/ensa_tetouan.webp" alt="" width="200" height="200" loading="lazy"></span><div><b>2020</b> <span class="fr">Baccalauréat sciences physiques, mention Très Bien</span><span class="en">Physical sciences baccalaureate, highest honours</span></div></div>
+      <div class="jalon"><span class="tuile"><img src="img/logos/ensa_tetouan.webp" alt="" width="200" height="200" loading="lazy"></span><div><b>2020–2023</b> <span class="fr">Cycle préparatoire intégré, ENSA Tétouan</span><span class="en">Integrated preparatory cycle, ENSA Tétouan</span></div></div>
+      <div class="jalon"><span class="tuile"><img src="img/logos/ensa_tetouan.webp" alt="" width="200" height="200" loading="lazy"></span><div><b>2023–2026</b> <span class="fr">Ingénieure d'État, Data Science, Big Data &amp; IA</span><span class="en">State engineer, Data Science, Big Data &amp; AI</span></div></div>
     </div>
     <div class="origines">
       <div class="carte apparait" id="notes">
-        <p class="petit" style="margin:0 0 8px"><span class="fr">Ma moyenne en cycle d'ingénieur (sur 20)</span><span class="en">My average in the engineering cycle (out of 20)</span></p>
-        <svg class="notes" viewBox="0 0 600 340" role="img" aria-label="Moyennes : 13,31 puis 15,91 puis 17,5 sur 20">
+        <h3 style="font-size:1.1rem;letter-spacing:0"><span class="fr">Ma moyenne pendant le cycle ingénieur (sur 20)</span><span class="en">My average during the engineering cycle (out of 20)</span></h3>
+        <svg class="notes" viewBox="0 0 600 360" role="img" aria-labelledby="notes-titre" aria-describedby="notes-table">
+          <title id="notes-titre">Moyennes : 13,31, puis 15,91, puis 17,5 sur 20</title>
           <defs><linearGradient id="gc" x1="0" x2="1"><stop offset="0" stop-color="#8f7bff"/><stop offset="1" stop-color="#3ad7ff"/></linearGradient>
                 <linearGradient id="ga" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5aa8ff" stop-opacity=".28"/><stop offset="1" stop-color="#5aa8ff" stop-opacity="0"/></linearGradient></defs>
-          <line class="axe" x1="40" x2="580" y1="40" y2="40"/><line class="axe" x1="40" x2="580" y1="126.7" y2="126.7"/><line class="axe" x1="40" x2="580" y1="213.3" y2="213.3"/><line class="axe" x1="40" x2="580" y1="300" y2="300"/>
-          <text class="lbl" x="34" y="44" text-anchor="end">18</text><text class="lbl" x="34" y="131" text-anchor="end">16</text><text class="lbl" x="34" y="217" text-anchor="end">14</text><text class="lbl" x="34" y="304" text-anchor="end">12</text>
+          <line class="axe" x1="44" x2="580" y1="40" y2="40"/><line class="axe" x1="44" x2="580" y1="126.7" y2="126.7"/><line class="axe" x1="44" x2="580" y1="213.3" y2="213.3"/><line class="axe" x1="44" x2="580" y1="300" y2="300"/>
+          <text class="lbl" x="36" y="45" text-anchor="end">18</text><text class="lbl" x="36" y="131" text-anchor="end">16</text><text class="lbl" x="36" y="218" text-anchor="end">14</text><text class="lbl" x="36" y="305" text-anchor="end">12</text>
           <path class="aire" d="M90 243.2 C 190 205, 215 148, 300 130.6 S 440 72, 510 61.7 L510 300 L90 300 Z" fill="url(#ga)"/>
           <path id="courbe-notes" d="M90 243.2 C 190 205, 215 148, 300 130.6 S 440 72, 510 61.7" fill="none" stroke="url(#gc)" stroke-width="4" stroke-linecap="round"/>
-          <g class="point"><circle cx="90" cy="243.2" r="8" fill="#05070d" stroke="#8f7bff" stroke-width="3"/><text x="90" y="222" text-anchor="middle" font-size="26" font-weight="600">13,31</text><text class="lbl" x="90" y="326" text-anchor="middle"><tspan class="fr">Année 1</tspan><tspan class="en">Year 1</tspan></text></g>
-          <g class="point"><circle cx="300" cy="130.6" r="8" fill="#05070d" stroke="#5aa8ff" stroke-width="3"/><text x="300" y="108" text-anchor="middle" font-size="26" font-weight="600">15,91</text><text class="lbl" x="300" y="326" text-anchor="middle"><tspan class="fr">Année 2 · 16e/57</tspan><tspan class="en">Year 2 · 16th/57</tspan></text></g>
-          <g class="point"><circle cx="510" cy="61.7" r="9" fill="#3ad7ff"/><text x="510" y="38" text-anchor="middle" font-size="30" font-weight="700" fill="#3ad7ff">17,5</text><text class="lbl" x="510" y="326" text-anchor="middle"><tspan class="fr">Année 3 · 14e/55</tspan><tspan class="en">Year 3 · 14th/55</tspan></text></g>
+          <g class="point"><circle cx="90" cy="243.2" r="8" fill="var(--fond)" stroke="#8f7bff" stroke-width="3"/><text class="val" x="90" y="222" text-anchor="middle" font-size="26">13,31</text></g>
+          <g class="point"><circle cx="300" cy="130.6" r="8" fill="var(--fond)" stroke="#5aa8ff" stroke-width="3"/><text class="val" x="300" y="108" text-anchor="middle" font-size="26">15,91</text><text class="rang" x="300" y="152" text-anchor="middle">16e / 57</text></g>
+          <g class="point"><circle cx="510" cy="61.7" r="9" fill="#3ad7ff"/><text class="val" x="510" y="38" text-anchor="middle" font-size="30">17,5</text><text class="rang" x="510" y="86" text-anchor="middle">14e / 55</text></g>
+          <text class="lbl" x="90" y="328" text-anchor="middle"><tspan class="fr">Année 1</tspan><tspan class="en">Year 1</tspan></text>
+          <text class="lbl" x="300" y="328" text-anchor="middle"><tspan class="fr">Année 2</tspan><tspan class="en">Year 2</tspan></text>
+          <text class="lbl" x="510" y="328" text-anchor="middle"><tspan class="fr">Année 3 · mention Très Bien</tspan><tspan class="en">Year 3 · highest honours</tspan></text>
+          <text class="lbl" x="300" y="354" text-anchor="middle">2023 – 2026</text>
         </svg>
+        <div class="sr-only" id="notes-table"><table>
+          <caption>Moyennes annuelles du cycle ingénieur</caption>
+          <tr><th>Année</th><th>Moyenne</th><th>Rang</th></tr>
+          <tr><td>1</td><td>13,31 / 20</td><td>—</td></tr>
+          <tr><td>2</td><td>15,91 / 20</td><td>16e sur 57</td></tr>
+          <tr><td>3</td><td>17,5 / 20, mention Très Bien</td><td>14e sur 55</td></tr>
+        </table></div>
       </div>
-      <div class="diplome" data-zoom>
-        <figure class="f1"><img src="img/parcours/diplomation_2026_big_data_ia.webp" data-parallaxe="0.06" width="960" height="1280" loading="lazy" alt="Diplomation 2026, filière Big Data et IA"><figcaption hidden><span class="fr">Diplomation 2026</span><span class="en">Graduation 2026</span></figcaption></figure>
-        <figure class="f2"><img src="img/parcours/diplomation_2026_campus_ensa_tetouan.webp" data-parallaxe="0.1" width="960" height="1280" loading="lazy" alt="Diplomation 2026 au campus de l'ENSA Tétouan"><figcaption hidden><span class="fr">Campus de l'ENSA Tétouan, 2026</span><span class="en">ENSA Tétouan campus, 2026</span></figcaption></figure>
-        <div class="note"><b>2026</b><span class="fr">Ingénieure d'État, mention Bien · PFE 19/20</span><span class="en">State engineer, with honours · final project 19/20</span></div>
+      <div class="diplome">
+        <figure class="f1"><button type="button" data-agrandir="img/parcours/diplomation_2026_big_data_ia.webp" data-legende-fr="Diplomation 2026, filière Big Data &amp; IA" data-legende-en="Graduation 2026, Big Data &amp; AI programme" style="all:unset;display:block;width:100%;height:100%;cursor:zoom-in"><img src="img/parcours/diplomation_2026_big_data_ia.webp" data-parallaxe="0.05" width="960" height="1280" loading="lazy" alt="Diplomation 2026, filière Big Data et IA"></button></figure>
+        <figure class="f2"><button type="button" data-agrandir="img/parcours/diplomation_2026_campus_ensa_tetouan.webp" data-legende-fr="Diplomation 2026, campus de l'ENSA Tétouan" data-legende-en="Graduation 2026, ENSA Tétouan campus" style="all:unset;display:block;width:100%;height:100%;cursor:zoom-in"><img src="img/parcours/diplomation_2026_campus_ensa_tetouan.webp" data-parallaxe="0.08" width="960" height="1280" loading="lazy" alt="Diplomation 2026 au campus de l'ENSA Tétouan"></button></figure>
+        <div class="note"><b>2026</b><span class="fr">Ingénieure d'État, mention Bien. Projet de fin d'études : 19/20.</span><span class="en">State engineer, with honours. Final-year project: 19/20.</span></div>
       </div>
     </div>
   </div>
@@ -124,288 +190,383 @@
   <div class="wrap">
     <p class="etiquette"><span class="fr">Chapitre 3 · Ce que j'ai construit</span><span class="en">Chapter 3 · What I built</span></p>
     <h2 data-mots><span class="fr">Cinq missions, des résultats mesurés.</span><span class="en">Five assignments, measured results.</span></h2>
-    <p class="sous"><span class="fr">Cliquez sur une carte pour voir le problème, ce que j'ai fait et le résultat.</span><span class="en">Click a card to see the problem, what I did and the result.</span></p>
+    <p class="sous"><span class="fr">Des problèmes différents. Une même envie : construire quelque chose qui sert.</span><span class="en">Different problems. The same drive: building something that is actually used.</span></p>
     <div class="experiences" data-serie>
-      <article class="carte exp" data-tilt role="button" tabindex="0" aria-expanded="false">
-        <div class="haut"><span class="tuile"><img src="img/logos/ocp_solutions.webp" alt="OCP Solutions" width="200" height="200"></span><div class="dates"><span class="fr">févr. – juin 2026</span><span class="en">Feb – June 2026</span><br>Casablanca</div></div>
-        <h3><span class="fr">Ingénieure IA, projet de fin d'études</span><span class="en">AI engineer, final-year project</span></h3>
-        <div class="metrique grad">52 → 96 %<small><span class="fr">traçabilité des sources de mon assistant RAG</span><span class="en">source traceability of my RAG assistant</span></small></div>
-        <div class="details"><div><dl>
-          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Répondre aux questions des équipes à partir des documents internes.</span><span class="en">Answer staff questions from internal documents.</span></dd>
-          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Un assistant IA (RAG), livré en SDK Python réutilisable. Une étude exploratoire de GraphRAG pour une version 2 (non implémentée).</span><span class="en">A RAG assistant delivered as a reusable Python SDK. An exploratory study of GraphRAG for a version 2 (not implemented).</span></dd>
-          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Fidélité des réponses de 71 % à 89 %, traçabilité des sources de 52 % à 96 %.</span><span class="en">Answer faithfulness from 71% to 89%, source traceability from 52% to 96%.</span></dd>
+      <article class="carte exp" data-tilt>
+        <div class="haut"><span class="tuile"><img src="img/logos/ocp_solutions.webp" alt="" width="200" height="200" loading="lazy"></span><div class="quand"><span class="fr">févr. – juin 2026</span><span class="en">Feb – June 2026</span><br>Casablanca</div></div>
+        <div><div class="org">OCP Solutions · Groupe OCP</div><h3><span class="fr">Ingénieure IA, projet de fin d'études</span><span class="en">AI engineer, final-year project</span></h3></div>
+        <p class="accroche"><span class="fr">Des documents internes, et des réponses difficiles à retrouver. J'ai construit un assistant RAG qui répond en citant ses sources.</span><span class="en">Internal documents, and answers that were hard to find. I built a RAG assistant that answers and cites its sources.</span></p>
+        <div class="metrique grad">52 → 96 %<small><span class="fr">traçabilité des sources ; fidélité des réponses de 71 % à 89 %</span><span class="en">source traceability; answer faithfulness from 71% to 89%</span></small></div>
+        <ul class="puces"><li>RAG</li><li>LLM</li><li><span class="fr">SDK Python</span><span class="en">Python SDK</span></li><li><span class="fr">GraphRAG (étude)</span><span class="en">GraphRAG (study)</span></li></ul>
+        <button class="explorer" type="button" aria-expanded="false" aria-controls="d-ocp"><i aria-hidden="true">+</i><span class="fr">Explorer la mission</span><span class="en">Explore the assignment</span></button>
+        <div class="details" id="d-ocp" aria-hidden="true"><div><dl>
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Répondre aux questions des équipes à partir des documents internes, sans perdre la trace des sources.</span><span class="en">Answering staff questions from internal documents without losing track of sources.</span></dd>
+          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Un assistant RAG livré en SDK Python réutilisable, évalué sur la fidélité des réponses et la traçabilité des sources. Une étude exploratoire de GraphRAG pour une version 2, non implémentée.</span><span class="en">A RAG assistant delivered as a reusable Python SDK, evaluated on answer faithfulness and source traceability. An exploratory GraphRAG study for a version 2, not implemented.</span></dd>
+          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Fidélité de 71 % à 89 %, traçabilité de 52 % à 96 %. Projet de fin d'études noté 19/20.</span><span class="en">Faithfulness from 71% to 89%, traceability from 52% to 96%. Final-year project graded 19/20.</span></dd>
         </dl></div></div>
-        <span class="plus"><i>+</i><span class="fr">Détails</span><span class="en">Details</span></span>
       </article>
-      <article class="carte exp" data-tilt role="button" tabindex="0" aria-expanded="false">
-        <div class="haut"><span class="tuile"><img src="img/logos/marotrans.webp" alt="Marotrans" width="200" height="200"></span><div class="dates"><span class="fr">mars – sept. 2026</span><span class="en">Mar – Sept 2026</span><br>Casablanca</div></div>
-        <h3><span class="fr">Chargée de mission Data &amp; IA</span><span class="en">Data &amp; AI officer</span></h3>
-        <div class="metrique grad">182<small><span class="fr">véhicules suivis sur une seule plateforme</span><span class="en">vehicles tracked on one platform</span></small></div>
-        <div class="details"><div><dl>
-          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Environ 1 h de saisie manuelle par jour pour suivre la flotte.</span><span class="en">About 1 hour of manual data entry per day to track the fleet.</span></dd>
-          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Une plateforme de suivi avec tableau de bord.</span><span class="en">A tracking platform with a dashboard.</span></dd>
-          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Un export en un clic au lieu de la saisie quotidienne.</span><span class="en">A one-click export instead of daily manual entry.</span></dd>
+      <article class="carte exp" data-tilt>
+        <div class="haut"><span class="tuile"><img src="img/logos/marotrans.webp" alt="" width="200" height="200" loading="lazy"></span><div class="quand"><span class="fr">mars – sept. 2026</span><span class="en">Mar – Sept 2026</span><br>Casablanca</div></div>
+        <div><div class="org"><span class="fr">Marotrans · transport routier</span><span class="en">Marotrans · road transport</span></div><h3><span class="fr">Chargée de mission Data &amp; IA</span><span class="en">Data &amp; AI officer</span></h3></div>
+        <p class="accroche"><span class="fr">Suivre la flotte demandait environ une heure de saisie manuelle par jour. J'ai construit une plateforme de suivi avec tableau de bord.</span><span class="en">Tracking the fleet took about an hour of manual data entry every day. I built a tracking platform with a dashboard.</span></p>
+        <div class="metrique grad">182<small><span class="fr">véhicules suivis ; export en un clic au lieu de la saisie quotidienne</span><span class="en">vehicles tracked; one-click export instead of daily manual entry</span></small></div>
+        <ul class="puces"><li>Data automation</li><li><span class="fr">Tableau de bord</span><span class="en">Dashboard</span></li></ul>
+        <button class="explorer" type="button" aria-expanded="false" aria-controls="d-maro"><i aria-hidden="true">+</i><span class="fr">Explorer la mission</span><span class="en">Explore the assignment</span></button>
+        <div class="details" id="d-maro" aria-hidden="true"><div><dl>
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Environ 1 h de saisie manuelle par jour pour suivre 182 véhicules.</span><span class="en">About one hour of manual entry per day to track 182 vehicles.</span></dd>
+          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Une plateforme de suivi des véhicules, avec un tableau de bord.</span><span class="en">A vehicle tracking platform with a dashboard.</span></dd>
+          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Un export en un clic remplace la saisie quotidienne.</span><span class="en">A one-click export replaces daily manual entry.</span></dd>
         </dl></div></div>
-        <span class="plus"><i>+</i><span class="fr">Détails</span><span class="en">Details</span></span>
       </article>
-      <article class="carte exp" data-tilt role="button" tabindex="0" aria-expanded="false">
-        <div class="haut"><span class="tuile"><img src="img/logos/cires_technologies.webp" alt="CIRES Technologies" width="200" height="200"></span><div class="dates"><span class="fr">juil. – sept. 2025</span><span class="en">July – Sept 2025</span><br>Tanger Med</div></div>
-        <h3><span class="fr">Stagiaire ingénieure Computer Vision</span><span class="en">Computer vision engineering intern</span></h3>
-        <div class="metrique grad">98 %<small><span class="fr">de précision sur les plaques, en temps réel</span><span class="en">precision on licence plates, in real time</span></small></div>
-        <div class="details"><div><dl>
-          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Détecter les véhicules et lire leurs plaques au port de Tanger Med.</span><span class="en">Detect vehicles and read their plates at the port of Tanger Med.</span></dd>
-          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Une base de plus de 10 000 images annotées, des modèles YOLOv5 (détection) et OCR (lecture).</span><span class="en">A dataset of over 10,000 annotated images, YOLOv5 (detection) and OCR (reading) models.</span></dd>
-          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Précision : 95,7 % (véhicules), 98 % (plaques), 96,6 % (OCR).</span><span class="en">Precision: 95.7% (vehicles), 98% (plates), 96.6% (OCR).</span></dd>
+      <article class="carte exp" data-tilt>
+        <div class="haut"><span class="tuile"><img src="img/logos/cires_technologies.webp" alt="" width="200" height="200" loading="lazy"></span><div class="quand"><span class="fr">juil. – sept. 2025</span><span class="en">July – Sept 2025</span><br>Tanger Med</div></div>
+        <div><div class="org">CIRES Technologies · Digital Factory</div><h3><span class="fr">Stagiaire ingénieure Computer Vision</span><span class="en">Computer vision engineering intern</span></h3></div>
+        <p class="accroche"><span class="fr">Au port de Tanger Med, détecter les véhicules et lire leurs plaques en temps réel. J'ai constitué la base d'images et entraîné les modèles.</span><span class="en">At the port of Tanger Med: detect vehicles and read their plates in real time. I built the image dataset and trained the models.</span></p>
+        <div class="metrique grad">98 %<small><span class="fr">de précision sur les plaques ; 95,7 % (véhicules), 96,6 % (OCR)</span><span class="en">precision on plates; 95.7% (vehicles), 96.6% (OCR)</span></small></div>
+        <ul class="puces"><li>YOLOv5</li><li>OCR</li><li>Computer Vision</li></ul>
+        <button class="explorer" type="button" aria-expanded="false" aria-controls="d-cires"><i aria-hidden="true">+</i><span class="fr">Explorer la mission</span><span class="en">Explore the assignment</span></button>
+        <div class="details" id="d-cires" aria-hidden="true"><div><dl>
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Identifier les véhicules et lire les plaques en temps réel.</span><span class="en">Identify vehicles and read plates in real time.</span></dd>
+          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Une base de plus de 10 000 images annotées ; un modèle de détection YOLOv5 et un modèle de lecture de plaques (OCR).</span><span class="en">A dataset of over 10,000 annotated images; a YOLOv5 detection model and a plate-reading (OCR) model.</span></dd>
+          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Précision de 95,7 % (véhicules), 98 % (plaques) et 96,6 % (OCR), en temps réel.</span><span class="en">Precision of 95.7% (vehicles), 98% (plates) and 96.6% (OCR), in real time.</span></dd>
         </dl></div></div>
-        <span class="plus"><i>+</i><span class="fr">Détails</span><span class="en">Details</span></span>
       </article>
-      <article class="carte exp" data-tilt role="button" tabindex="0" aria-expanded="false">
-        <div class="haut"><span class="tuile"><img src="img/logos/ocp_al_moutmir.webp" alt="OCP Al Moutmir" width="196" height="220"></span><div class="dates"><span class="fr">juil. – août 2025</span><span class="en">July – Aug 2025</span><br><span class="fr">à distance</span><span class="en">remote</span></div></div>
-        <h3><span class="fr">Chatbot pour agriculteurs</span><span class="en">Chatbot for farmers</span></h3>
-        <div class="metrique grad">FR + darija<small><span class="fr">deux langues pour répondre aux agriculteurs</span><span class="en">two languages to answer farmers</span></small></div>
-        <div class="details"><div><dl>
-          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Un chatbot en français et en darija pour les agriculteurs.</span><span class="en">A chatbot in French and Darija for farmers.</span></dd>
-        </dl></div></div>
-        <span class="plus"><i>+</i><span class="fr">Détails</span><span class="en">Details</span></span>
+      <article class="carte exp" data-tilt>
+        <div class="haut"><span class="tuile"><img src="img/logos/ocp_al_moutmir.webp" alt="" width="196" height="220" loading="lazy"></span><div class="quand"><span class="fr">juil. – août 2025</span><span class="en">July – Aug 2025</span><br><span class="fr">à distance</span><span class="en">remote</span></div></div>
+        <div><div class="org">OCP Al Moutmir</div><h3><span class="fr">Un chatbot pour les agriculteurs</span><span class="en">A chatbot for farmers</span></h3></div>
+        <p class="accroche"><span class="fr">Répondre aux agriculteurs dans leur langue : j'ai conçu un chatbot en français et en darija.</span><span class="en">Answering farmers in their own language: I designed a chatbot in French and Darija.</span></p>
+        <div class="metrique grad">FR + darija<small><span class="fr">deux langues pour un même assistant</span><span class="en">two languages for one assistant</span></small></div>
+        <ul class="puces"><li>Chatbot</li></ul>
       </article>
-      <article class="carte exp ministere" data-tilt role="button" tabindex="0" aria-expanded="false">
-        <div class="haut"><span class="tuile texte"><span class="fr">Ministère de l'Éducation nationale</span><span class="en">Ministry of National Education</span></span><div class="dates"><span class="fr">juil. – sept. 2024</span><span class="en">July – Sept 2024</span><br>Rabat</div></div>
-        <h3><span class="fr">Direction des systèmes d'information</span><span class="en">IT department</span></h3>
-        <div class="metrique grad">2024<small><span class="fr">mon premier assistant IA, pour les enseignants</span><span class="en">my first AI assistant, for teachers</span></small></div>
-        <div class="details"><div><dl>
-          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Un assistant IA pour les enseignants.</span><span class="en">An AI assistant for teachers.</span></dd>
-        </dl></div></div>
-        <span class="plus"><i>+</i><span class="fr">Détails</span><span class="en">Details</span></span>
+      <article class="carte exp" data-tilt>
+        <div class="haut"><span class="tuile large"><img src="img/logos/ministere_education_nationale.webp" alt="" width="420" height="220" loading="lazy"></span><div class="quand"><span class="fr">juil. – sept. 2024</span><span class="en">July – Sept 2024</span><br>Rabat</div></div>
+        <div><div class="org"><span class="fr">Ministère de l'Éducation nationale · DSI</span><span class="en">Ministry of National Education · IT dept.</span></div><h3><span class="fr">Un assistant IA pour les enseignants</span><span class="en">An AI assistant for teachers</span></h3></div>
+        <p class="accroche"><span class="fr">Mon premier assistant IA, pensé pour le travail des enseignants.</span><span class="en">My first AI assistant, designed for teachers' work.</span></p>
+        <div class="metrique grad">2024<small><span class="fr">premier stage en IA</span><span class="en">first AI internship</span></small></div>
       </article>
-      <article class="carte" data-tilt>
-        <h3><span class="fr">Mes outils</span><span class="en">My tools</span></h3>
-        <ul class="puces"><li>PyTorch</li><li>CNN</li><li>YOLOv5</li><li>Transformers</li><li>Grad-CAM</li><li>SHAP</li><li>LIME</li><li>LLM</li><li>RAG</li><li>Python</li><li>SQL</li><li>Pandas</li><li>Scikit-learn</li><li>FastAPI</li><li>Docker</li><li>Git</li></ul>
-        <p class="petit" style="margin-top:18px"><span class="fr">Français B2 (TCF, 465 points) · anglais intermédiaire · arabe langue maternelle</span><span class="en">French B2 (TCF, 465 points) · intermediate English · native Arabic</span></p>
+      <article class="carte" data-tilt style="display:flex;flex-direction:column;justify-content:center">
+        <h3><span class="fr">Entre une idée et un outil qui fonctionne, il y a beaucoup de questions.</span><span class="en">Between an idea and a working tool, there are many questions.</span></h3>
+        <p style="color:var(--texte-2);margin:12px 0 0"><span class="fr">C'est cette partie que j'aime construire.</span><span class="en">That is the part I love to build.</span></p>
+        <p class="petit" style="margin:16px 0 0"><span class="fr">Français B2 (TCF, 465 points) · anglais intermédiaire · arabe langue maternelle</span><span class="en">French B2 (TCF, 465 points) · intermediate English · native Arabic</span></p>
       </article>
+    </div>
+
+    <div class="carte outils apparait" id="outils">
+      <h3><span class="fr">Mes outils</span><span class="en">My toolbox</span></h3>
+      <div class="groupes">
+        <div><h4><span class="fr">IA &amp; vision</span><span class="en">AI &amp; vision</span></h4><ul>
+          <li class="outil"><img src="img/outils/pytorch.svg" alt="" width="28" height="28" loading="lazy">PyTorch</li>
+          <li class="outil"><img src="img/outils/ultralytics.svg" alt="" width="28" height="28" loading="lazy">YOLOv5</li>
+          <li class="outil"><img src="img/outils/opencv.svg" alt="" width="28" height="28" loading="lazy">OpenCV</li>
+          <li class="outil"><img src="img/outils/huggingface.svg" alt="" width="28" height="28" loading="lazy">Transformers</li>
+          <li class="badge-c">CNN</li></ul></div>
+        <div><h4><span class="fr">IA générative &amp; explicable</span><span class="en">Generative &amp; explainable AI</span></h4><ul>
+          <li class="outil"><img src="img/outils/langchain.svg" alt="" width="28" height="28" loading="lazy">LangChain</li>
+          <li class="badge-c">LLM</li><li class="badge-c">RAG</li><li class="badge-c">Grad-CAM</li><li class="badge-c">SHAP</li><li class="badge-c">LIME</li></ul></div>
+        <div><h4><span class="fr">Données</span><span class="en">Data</span></h4><ul>
+          <li class="outil"><img src="img/outils/python.svg" alt="" width="28" height="28" loading="lazy">Python</li>
+          <li class="outil"><img src="img/outils/pandas.svg" alt="" width="28" height="28" loading="lazy">Pandas</li>
+          <li class="outil"><img src="img/outils/numpy.svg" alt="" width="28" height="28" loading="lazy">NumPy</li>
+          <li class="outil"><img src="img/outils/scikitlearn.svg" alt="" width="28" height="28" loading="lazy">Scikit-learn</li>
+          <li class="outil"><img src="img/outils/postgresql.svg" alt="" width="28" height="28" loading="lazy">SQL</li>
+          <li class="outil"><img src="img/outils/jupyter.svg" alt="" width="28" height="28" loading="lazy">Jupyter</li></ul></div>
+        <div><h4><span class="fr">Mise en production</span><span class="en">Shipping</span></h4><ul>
+          <li class="outil"><img src="img/outils/fastapi.svg" alt="" width="28" height="28" loading="lazy">FastAPI</li>
+          <li class="outil"><img src="img/outils/docker.svg" alt="" width="28" height="28" loading="lazy">Docker</li>
+          <li class="outil"><img src="img/outils/git.svg" alt="" width="28" height="28" loading="lazy">Git</li></ul></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ CHAPITRE 4 — LE TOURNANT VERS LA SANTÉ ============ -->
-<section class="chapitre horizontal" id="sante" style="padding-block:clamp(90px,10vw,130px)">
-  <div class="wrap" style="margin-bottom:clamp(36px,5vw,60px)">
-    <p class="etiquette"><span class="fr">Chapitre 4 · Le tournant vers la santé</span><span class="en">Chapter 4 · Turning to health</span></p>
-    <h2 data-mots><span class="fr">Comment je suis arrivée à l'imagerie médicale.</span><span class="en">How I came to medical imaging.</span></h2>
+<section class="chapitre horizontal" id="sante" style="padding-block:clamp(80px,9vw,120px)">
+  <div class="wrap tete-h" style="margin-bottom:clamp(30px,4vw,52px)">
+    <div>
+      <p class="etiquette"><span class="fr">Chapitre 4 · Le tournant vers la santé</span><span class="en">Chapter 4 · Turning to health</span></p>
+      <h2 data-mots><span class="fr">Comment je suis arrivée à l'imagerie médicale.</span><span class="en">How I came to medical imaging.</span></h2>
+      <p class="sous"><span class="fr">Tout a commencé par une radiographie, en 2024. Puis une question en a entraîné une autre : comment une IA apprend-elle à voir ce que nous cherchons à comprendre ?</span><span class="en">It started with an X-ray, in 2024. Then one question led to another: how does an AI learn to see what we are trying to understand?</span></p>
+    </div>
+    <div class="controle-h">
+      <div class="fleches"><button type="button" id="h-prec" aria-label="Étape précédente">←</button><button type="button" id="h-suiv" aria-label="Étape suivante">→</button></div>
+      <div class="barre-h" aria-hidden="true"><i></i></div><output aria-live="polite">1 / 5</output>
+    </div>
   </div>
-  <div class="piste-h" data-zoom>
+  <div class="piste-h" tabindex="0" role="region" aria-label="Frise : du premier projet sur radiographies au projet actuel. Flèches gauche et droite pour naviguer.">
     <article class="panneau">
-      <div><div class="an sante">2024</div><h3><span class="fr">Ma première IA sur des radiographies thoraciques.</span><span class="en">My first AI on chest X-rays.</span></h3>
-        <p><span class="fr">Projet Coursera « Detecting COVID-19 with Chest X-Ray using PyTorch », 18 mai 2024.</span><span class="en">Coursera project "Detecting COVID-19 with Chest X-Ray using PyTorch", 18 May 2024.</span></p>
-        <a class="lien-chap" href="docs/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.pdf"><span class="fr">Voir le certificat</span><span class="en">See the certificate</span> →</a></div>
-      <figure style="margin:0"><img class="certif-img" src="img/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.webp" width="900" height="695" loading="lazy" alt="Certificat Coursera Detecting COVID-19 with Chest X-Ray using PyTorch"><figcaption hidden><span class="fr">Certificat Coursera, 18 mai 2024</span><span class="en">Coursera certificate, 18 May 2024</span></figcaption></figure>
+      <div><div class="etape"><span class="fr">1 · Première exploration</span><span class="en">1 · First exploration</span></div><div class="an sante">2024</div>
+        <h3><span class="fr">Ma première IA sur des radiographies thoraciques.</span><span class="en">My first AI on chest X-rays.</span></h3>
+        <p><span class="fr">Le projet guidé Coursera « Detecting COVID-19 with Chest X-Ray using PyTorch », le 18 mai 2024.</span><span class="en">The Coursera guided project "Detecting COVID-19 with Chest X-Ray using PyTorch", on 18 May 2024.</span></p>
+        <a class="lien-chap" href="docs/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.pdf"><span class="fr">Voir le certificat (PDF)</span><span class="en">See the certificate (PDF)</span> →</a></div>
+      <button type="button" data-agrandir="img/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.webp" data-pdf="docs/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.pdf" data-legende-fr="Certificat Coursera, 18 mai 2024" data-legende-en="Coursera certificate, 18 May 2024" style="all:unset;cursor:zoom-in"><img class="certif-img" src="img/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.webp" width="900" height="695" loading="lazy" alt="Certificat Coursera Detecting COVID-19 with Chest X-Ray using PyTorch"></button>
     </article>
     <article class="panneau">
-      <div><div class="an sante"><span class="fr">Mai 2026</span><span class="en">May 2026</span></div><h3>GITEX Future Health Africa, Casablanca</h3>
-        <p><span class="fr">Déléguée. J'y ai vu l'IA appliquée à la radiographie thoracique et à l'échographie.</span><span class="en">Delegate. I saw AI applied to chest X-ray and ultrasound.</span></p></div>
+      <div><div class="etape"><span class="fr">2 · Rencontres et découvertes</span><span class="en">2 · Encounters and discoveries</span></div><div class="an sante"><span class="fr">Mai 2026</span><span class="en">May 2026</span></div>
+        <h3>GITEX Future Health Africa, Casablanca</h3>
+        <p><span class="fr">Déléguée, du 4 au 6 mai. J'y ai vu des outils d'IA en radiographie thoracique et en échographie.</span><span class="en">Delegate, 4–6 May. I saw AI tools for chest X-ray and ultrasound.</span></p></div>
       <div class="photos">
-        <figure class="p1"><img src="img/evenements/gitex_future_health_2026_siemens_radiographie_ia.webp" width="961" height="1280" loading="lazy" alt="Stand d'IA en radiographie thoracique"><figcaption hidden><span class="fr">IA en radiographie thoracique, GITEX Future Health Africa, mai 2026</span><span class="en">AI for chest X-ray, GITEX Future Health Africa, May 2026</span></figcaption></figure>
-        <figure class="p2"><img src="img/evenements/gitex_future_health_2026_fusion_ai_echographie.webp" width="591" height="960" loading="lazy" alt="Stand d'IA en échographie"><figcaption hidden><span class="fr">IA en échographie, mai 2026</span><span class="en">AI for ultrasound, May 2026</span></figcaption></figure>
-        <figure class="p3"><img src="img/evenements/gitex_future_health_2026_badge.webp" width="853" height="1280" loading="lazy" alt="Badge de déléguée"><figcaption hidden><span class="fr">Badge de déléguée, 4-6 mai 2026</span><span class="en">Delegate badge, 4–6 May 2026</span></figcaption></figure>
+        <figure class="p1"><button type="button" data-agrandir="img/evenements/gitex_future_health_2026_siemens_radiographie_ia.webp" data-legende-fr="GITEX Future Health Africa, mai 2026 : un stand d'IA en radiographie thoracique" data-legende-en="GITEX Future Health Africa, May 2026: an AI stand for chest X-ray" style="all:unset;display:block;width:100%;height:100%"><img src="img/evenements/gitex_future_health_2026_siemens_radiographie_ia.webp" width="961" height="1280" loading="lazy" alt="Stand d'IA en radiographie thoracique au GITEX Future Health Africa"></button></figure>
+        <figure class="p2"><button type="button" data-agrandir="img/evenements/gitex_future_health_2026_fusion_ai_echographie.webp" data-legende-fr="GITEX Future Health Africa, mai 2026 : l'IA en échographie" data-legende-en="GITEX Future Health Africa, May 2026: AI for ultrasound" style="all:unset;display:block;width:100%;height:100%"><img src="img/evenements/gitex_future_health_2026_fusion_ai_echographie.webp" width="591" height="960" loading="lazy" alt="Stand d'IA en échographie"></button></figure>
+        <figure class="p3"><button type="button" data-agrandir="img/evenements/gitex_future_health_2026_badge.webp" data-legende-fr="Badge de déléguée, GITEX Future Health Africa, 4-6 mai 2026" data-legende-en="Delegate badge, GITEX Future Health Africa, 4–6 May 2026" style="all:unset;display:block;width:100%;height:100%"><img src="img/evenements/gitex_future_health_2026_badge.webp" width="853" height="1280" loading="lazy" alt="Badge de déléguée"></button></figure>
       </div>
     </article>
     <article class="panneau">
-      <div><div class="an sante"><span class="fr">Nov. 2026</span><span class="en">Nov 2026</span></div><h3>AI-MEDX, UM6P Ben Guerir</h3>
-        <p><span class="fr">« AI in Medicine with eXplainability », du 2 au 4 novembre, avec l'AMIIA. Je suis membre de sa cellule HealthTech.</span><span class="en">"AI in Medicine with eXplainability", 2–4 November, with AMIIA. I am a member of its HealthTech unit.</span></p></div>
+      <div><div class="etape"><span class="fr">3 · Curiosité approfondie</span><span class="en">3 · Deeper curiosity</span></div><div class="an sante"><span class="fr">Nov. 2026</span><span class="en">Nov 2026</span></div>
+        <h3>AI-MEDX, UM6P Ben Guerir</h3>
+        <p><span class="fr">« AI in Medicine with eXplainability », du 2 au 4 novembre, avec l'AMIIA, dont je suis membre de la cellule HealthTech.</span><span class="en">"AI in Medicine with eXplainability", 2–4 November, with AMIIA, where I am a member of the HealthTech unit.</span></p></div>
       <div class="photos">
-        <figure class="p1"><img src="img/evenements/ai_medx_2026_conference.webp" width="992" height="1280" loading="lazy" alt="Conférence AI-MEDX 2026"><figcaption hidden>AI-MEDX 2026, UM6P Ben Guerir</figcaption></figure>
-        <figure class="p2"><img src="img/evenements/ai_medx_2026_certificat.webp" width="1200" height="900" loading="lazy" alt="Certificat de participation AI-MEDX 2026"><figcaption hidden><span class="fr">Certificat de participation</span><span class="en">Certificate of participation</span></figcaption></figure>
-        <figure class="p3"><img src="img/evenements/ai_medx_2026_annonce_amiia.webp" width="1200" height="1200" loading="lazy" alt="Annonce de l'AMIIA"><figcaption hidden><span class="fr">Annonce de l'AMIIA</span><span class="en">AMIIA announcement</span></figcaption></figure>
+        <figure class="p1"><button type="button" data-agrandir="img/evenements/ai_medx_2026_conference.webp" data-legende-fr="AI-MEDX 2026, UM6P Ben Guerir, 2-4 novembre 2026" data-legende-en="AI-MEDX 2026, UM6P Ben Guerir, 2–4 November 2026" style="all:unset;display:block;width:100%;height:100%"><img src="img/evenements/ai_medx_2026_conference.webp" width="992" height="1280" loading="lazy" alt="Conférence AI-MEDX 2026"></button></figure>
+        <figure class="p2"><button type="button" data-agrandir="img/evenements/ai_medx_2026_certificat.webp" data-legende-fr="Certificat de participation, AI-MEDX 2026" data-legende-en="Certificate of participation, AI-MEDX 2026" style="all:unset;display:block;width:100%;height:100%"><img src="img/evenements/ai_medx_2026_certificat.webp" width="1200" height="900" loading="lazy" alt="Certificat de participation AI-MEDX 2026"></button></figure>
+        <figure class="p3"><button type="button" data-agrandir="img/evenements/ai_medx_2026_annonce_amiia.webp" data-legende-fr="Annonce de l'AMIIA pour AI-MEDX 2026" data-legende-en="AMIIA announcement for AI-MEDX 2026" style="all:unset;display:block;width:100%;height:100%"><img src="img/evenements/ai_medx_2026_annonce_amiia.webp" width="1200" height="1200" loading="lazy" alt="Annonce de l'AMIIA"></button></figure>
       </div>
+    </article>
+    <article class="panneau">
+      <div><div class="etape"><span class="fr">4 · Projet technique</span><span class="en">4 · Technical project</span></div><div class="an grad"><span class="fr">Nov. 2026</span><span class="en">Nov 2026</span></div>
+        <h3><span class="fr">Mon propre projet : une IA explicable sur radiographies thoraciques.</span><span class="en">My own project: explainable AI on chest X-rays.</span></h3>
+        <p><span class="fr">Entraîner un modèle, puis le questionner : où regarde-t-il, et quand se trompe-t-il ?</span><span class="en">Train a model, then question it: where does it look, and when is it wrong?</span></p>
+        <a class="lien-chap" href="#projet"><span class="fr">Chapitre 5</span><span class="en">Chapter 5</span> →</a></div>
+      <img src="projet/cas/VP_cam.jpg" width="448" height="448" loading="lazy" alt="Carte Grad-CAM d'une radiographie du test" style="border-radius:var(--r-md);border:1px solid var(--bord)">
     </article>
     <article class="panneau final">
-      <div class="an grad"><span class="fr">Et ensuite</span><span class="en">And then</span></div>
-      <h3><span class="fr">Mon propre projet : une IA explicable sur radiographies thoraciques.</span><span class="en">My own project: explainable AI on chest X-rays.</span></h3>
-      <a class="lien-chap" href="#projet"><span class="fr">Chapitre 5</span><span class="en">Chapter 5</span> →</a>
+      <div class="etape"><span class="fr">5 · Ambition actuelle</span><span class="en">5 · Current ambition</span></div>
+      <div class="an grad">2027</div>
+      <h3><span class="fr">Un master en IA appliquée à la santé et à l'imagerie médicale, en France.</span><span class="en">A master's in AI for health and medical imaging, in France.</span></h3>
+      <a class="lien-chap" href="#vise"><span class="fr">Ce que je vise</span><span class="en">What I aim for</span> →</a>
     </article>
   </div>
 </section>
 
+<!-- PROJET:DEBUT -->
 <!-- ============ CHAPITRE 5 — MON PROJET PHARE ============ -->
 <section class="chapitre" id="projet">
   <div class="wrap">
     <p class="etiquette"><span class="fr">Chapitre 5 · Mon projet phare</span><span class="en">Chapter 5 · My main project</span></p>
     <h2 data-mots><span class="fr">Où regarde une IA quand elle lit une radiographie ?</span><span class="en">Where does an AI look when it reads an X-ray?</span></h2>
-    <p class="sous"><span class="fr">J'ai entraîné un DenseNet-121 sur des radiographies d'enfants, puis je l'ai testé sur 624 images qu'il n'avait jamais vues.</span><span class="en">I trained a DenseNet-121 on children's X-rays, then tested it on 624 images it had never seen.</span></p>
-    <p class="avert"><span class="fr">Projet pédagogique · pas un outil de diagnostic</span><span class="en">Educational project · not a diagnostic tool</span></p>
+    <p class="sous"><span class="fr">Ce qui me passionne dans l'IA, ce n'est pas seulement ce qu'elle réussit. C'est aussi comprendre pourquoi elle se trompe.</span><span class="en">What fascinates me about AI is not only what it gets right. It is understanding why it gets things wrong.</span></p>
+    <p class="avert"><span class="fr">Projet pédagogique et expérimental. Ce système n'est pas un dispositif médical et ne doit pas être utilisé pour établir un diagnostic.</span><span class="en">Educational and experimental project. This system is not a medical device and must not be used to make a diagnosis.</span></p>
+
+    <dl class="en-bref" data-serie>
+      <div class="carte"><dt><span class="fr">Le problème</span><span class="en">The problem</span></dt><dd><span class="fr">Reconnaître une pneumonie sur une radiographie d'enfant, et voir sur quoi le modèle s'appuie.</span><span class="en">Recognising pneumonia on a child's X-ray, and seeing what the model relies on.</span></dd></div>
+      <div class="carte"><dt><span class="fr">Le modèle</span><span class="en">The model</span></dt><dd><span class="fr">DenseNet-121 pré-entraîné sur ImageNet, comparé à un petit CNN entraîné de zéro.</span><span class="en">An ImageNet-pretrained DenseNet-121, compared with a small CNN trained from scratch.</span></dd></div>
+      <div class="carte"><dt><span class="fr">Les données</span><span class="en">The data</span></dt><dd><span class="fr">5 856 radiographies d'enfants de 1 à 5 ans, un seul hôpital (Kermany et al., 2018).</span><span class="en">5,856 X-rays of children aged 1 to 5, from one hospital (Kermany et al., 2018).</span></dd></div>
+      <div class="carte"><dt><span class="fr">Le protocole</span><span class="en">The protocol</span></dt><dd><span class="fr">Validation découpée par patient ; test officiel de 624 images gardé intact jusqu'à la fin ; seuil fixé sur la validation.</span><span class="en">Validation split by patient; official 624-image test set untouched until the end; threshold set on validation.</span></dd></div>
+      <div class="carte"><dt><span class="fr">L'objectif</span><span class="en">The goal</span></dt><dd><span class="fr">Pédagogique : apprendre à évaluer honnêtement un modèle et à le questionner.</span><span class="en">Educational: learning to evaluate a model honestly and to question it.</span></dd></div>
+      <div class="carte"><dt><span class="fr">L'explicabilité</span><span class="en">Explainability</span></dt><dd><span class="fr">Grad-CAM indique les zones qui ont pesé sur la décision. Une indication, pas une preuve.</span><span class="en">Grad-CAM shows the areas that weighed on the decision. A hint, not proof.</span></dd></div>
+    </dl>
 
     <div class="vitrine">
-      <div class="scene3d" id="scene3d" role="img" aria-label="Radiographie en 3D qui pivote ; la carte Grad-CAM du modèle apparaît en fondu.">
+      <div class="scene3d" id="scene3d" role="img" aria-label="Radiographie en 3D qui pivote lentement ; la vraie carte Grad-CAM du modèle apparaît en fondu.">
         <canvas id="canvas3d" aria-hidden="true"></canvas>
-        <div class="secours" aria-hidden="true"><div class="plaque"><img src="projet/xray.jpg" alt=""><img class="cam" src="projet/gradcam.png" alt=""></div></div>
+        <div class="secours" aria-hidden="true"><div class="plaque"><img src="projet/xray.jpg" alt="" loading="lazy"><img class="cam" src="projet/gradcam.png" alt="" loading="lazy"></div></div>
         <p class="leg"><span class="fr">Une radiographie du test et la vraie carte Grad-CAM du modèle.</span><span class="en">A test X-ray and the model's real Grad-CAM map.</span> Kermany et al., 2018 (CC BY 4.0)</p>
       </div>
       <div class="stats-projet" data-serie>
-        <div class="carte" data-tilt><div class="chiffre grad" data-compteur="0.976" data-dec="3">0,976</div><p><span class="fr">AUC sur le test (IC 95 % : 0,961–0,988)</span><span class="en">test AUC (95% CI: 0.961–0.988)</span></p></div>
-        <div class="carte" data-tilt><div class="chiffre"><span data-compteur="3">3</span><small>/390</small></div><p><span class="fr">pneumonies ratées</span><span class="en">pneumonias missed</span></p></div>
-        <div class="carte" data-tilt><div class="chiffre" style="color:var(--chaud)"><span data-compteur="44">44</span><small>/234</small></div><p><span class="fr">fausses alertes : mon point faible</span><span class="en">false alarms: my weak point</span></p></div>
-        <div class="boutons" style="margin-top:6px">
-          <a class="btn plein" href="https://github.com/LamiaeAndof/chest-xray-explainable-ai"><span class="fr">Code et notebooks</span><span class="en">Code and notebooks</span> <span class="fleche">→</span></a>
-          <a class="btn" href="docs/poster_Lamiae_Andof.pdf">Poster (PDF)</a>
-        </div>
+        <div class="carte" data-tilt><div class="chiffre grad" data-compteur="0.976" data-dec="3">0,976</div><p><span class="fr">AUC sur le test (IC 95 % : 0,961–0,988). La baseline obtient 0,926.</span><span class="en">Test AUC (95% CI: 0.961–0.988). The baseline reaches 0.926.</span></p></div>
+        <div class="carte" data-tilt><div class="chiffre"><span data-compteur="3">3</span><small>/390</small></div><p><span class="fr">pneumonies manquées au seuil 0,5 (35 pour la baseline)</span><span class="en">pneumonias missed at threshold 0.5 (35 for the baseline)</span></p></div>
+        <div class="carte" data-tilt><div class="chiffre" style="color:var(--chaud)"><span data-compteur="44">44</span><small>/234</small></div><p><span class="fr">fausses alertes : mon point faible. Spécificité de 0,995 en validation, 0,812 sur le test.</span><span class="en">false alarms: my weak point. Specificity 0.995 on validation, 0.812 on test.</span></p></div>
       </div>
     </div>
 
     <div class="bloc-projet">
       <h3 data-mots><span class="fr">Glissez pour voir où regarde le modèle.</span><span class="en">Drag to see where the model looks.</span></h3>
-      <p><span class="fr">Quatre vrais cas du test : deux réussites, deux erreurs.</span><span class="en">Four real test cases: two successes, two errors.</span></p>
+      <p><span class="fr">Quatre vrais cas du test : deux réussites, deux erreurs. Pour chacun, ce que le modèle a prédit, ce qui était attendu, et ce que l'on peut raisonnablement observer.</span><span class="en">Four real test cases: two successes, two errors. For each: what the model predicted, what was expected, and what can reasonably be observed.</span></p>
       <div class="explorateur">
         <div class="avantapres" id="aa">
-          <img class="avant" src="projet/cas/VP_radio.jpg" alt="Radiographie">
-          <img class="apres" src="projet/cas/VP_cam.jpg" alt="Carte Grad-CAM superposée">
-          <span class="barre"></span><span class="tag g">radio</span><span class="tag d">Grad-CAM</span>
-          <input type="range" min="0" max="100" value="50" aria-label="Révéler la carte Grad-CAM">
+          <img class="avant" src="projet/cas/VP_radio.jpg" alt="Radiographie seule" width="448" height="448" loading="lazy">
+          <img class="apres" src="projet/cas/VP_cam.jpg" alt="Même radiographie avec la carte Grad-CAM superposée" width="448" height="448" loading="lazy">
+          <span class="barre" aria-hidden="true"></span><span class="tag g" aria-hidden="true">Radio</span><span class="tag d" aria-hidden="true">Grad-CAM</span>
+          <label class="sr-only" for="aa-pos"><span class="fr">Position du comparateur radio / Grad-CAM</span><span class="en">Comparator position, X-ray / Grad-CAM</span></label>
+          <input id="aa-pos" type="range" min="0" max="100" value="50">
         </div>
         <div>
           <div class="choix-cas" role="group" aria-label="Choisir un cas">
-            <button type="button" data-cas="VP" aria-pressed="true"><img src="projet/cas/VP_cam.jpg" alt="" loading="lazy"><span class="fr">Détectée</span><span class="en">Detected</span></button>
-            <button type="button" data-cas="VN" aria-pressed="false"><img src="projet/cas/VN_cam.jpg" alt="" loading="lazy"><span>Normale</span></button>
-            <button type="button" data-cas="FP" aria-pressed="false"><img src="projet/cas/FP_cam.jpg" alt="" loading="lazy"><span class="fr">Fausse alerte</span><span class="en">False alarm</span></button>
-            <button type="button" data-cas="FN" aria-pressed="false"><img src="projet/cas/FN_cam.jpg" alt="" loading="lazy"><span class="fr">Ratée</span><span class="en">Missed</span></button>
+            <button type="button" data-cas="VP" aria-pressed="true"><img src="projet/cas/VP_cam.jpg" alt="" loading="lazy" width="448" height="448"><span><span class="fr">Détection correcte</span><span class="en">Correct detection</span></span></button>
+            <button type="button" data-cas="VN" aria-pressed="false"><img src="projet/cas/VN_cam.jpg" alt="" loading="lazy" width="448" height="448"><span><span class="fr">Normale correcte</span><span class="en">Correct normal</span></span></button>
+            <button type="button" data-cas="FP" aria-pressed="false"><img src="projet/cas/FP_cam.jpg" alt="" loading="lazy" width="448" height="448"><span><span class="fr">Fausse alerte</span><span class="en">False alarm</span></span></button>
+            <button type="button" data-cas="FN" aria-pressed="false"><img src="projet/cas/FN_cam.jpg" alt="" loading="lazy" width="448" height="448"><span><span class="fr">Pneumonie manquée</span><span class="en">Missed pneumonia</span></span></button>
           </div>
-          <div class="lecture-cas" aria-live="polite"><h4>Pneumonie détectée</h4><div class="proba">P = 1,000</div><p></p></div>
-          <p class="petit"><span class="fr">Je ne suis pas radiologue : mes lectures restent prudentes. Grad-CAM montre où le modèle regarde, pas ce qu'il y voit.</span><span class="en">I am not a radiologist, so my readings stay cautious. Grad-CAM shows where the model looks, not what it sees.</span></p>
+          <div class="lecture-cas" aria-live="polite">
+            <h4>Pneumonie détectée</h4>
+            <dl><dt><span class="fr">Prédit</span><span class="en">Predicted</span></dt><dd id="cas-pred">—</dd><dt><span class="fr">Attendu</span><span class="en">Expected</span></dt><dd id="cas-vrai">—</dd></dl>
+            <p class="obs"></p>
+          </div>
+          <p class="prudence"><span class="fr">Je ne suis pas radiologue : mes lectures restent prudentes. Grad-CAM montre où le modèle regarde, pas ce qu'il y voit. Ce n'est pas une preuve d'un raisonnement médical.</span><span class="en">I am not a radiologist, so my readings stay cautious. Grad-CAM shows where the model looks, not what it sees. It is not evidence of medical reasoning.</span></p>
         </div>
       </div>
     </div>
 
     <div class="bloc-projet">
       <h3 data-mots><span class="fr">Choisir un seuil, c'est choisir ses erreurs.</span><span class="en">Choosing a threshold means choosing your errors.</span></h3>
-      <p><span class="fr">Déplacez le curseur : tout est recalculé en direct sur les 624 vraies prédictions.</span><span class="en">Move the slider: everything is recomputed live on the 624 real predictions.</span></p>
+      <p><span class="fr">Le modèle donne une probabilité. Au-dessus du seuil, il dit « pneumonie ». Baisser le seuil rattrape des pneumonies mais ajoute des fausses alertes ; le monter fait l'inverse. Tout est recalculé en direct sur les 624 vraies prédictions du test.</span><span class="en">The model outputs a probability. Above the threshold, it says "pneumonia". Lowering the threshold catches more pneumonias but adds false alarms; raising it does the opposite. Everything is recomputed live on the 624 real test predictions.</span></p>
+      <p class="petit" id="labo-etat" role="status"><span class="fr">Chargement des données…</span><span class="en">Loading data…</span></p>
       <div class="labo" id="labo">
         <div class="carte">
           <div class="commandes">
             <div class="seg" role="group" aria-label="Modèle"><button type="button" data-modele="densenet121" aria-pressed="true">DenseNet-121</button><button type="button" data-modele="baseline" aria-pressed="false">Baseline</button></div>
-            <div class="seg" role="group" aria-label="Seuils"><button type="button" data-preset="0.5">0,5</button><button type="button" data-preset="hs"><span class="fr">haute sensibilité</span><span class="en">high sensitivity</span></button></div>
+            <div class="seg" role="group" aria-label="Seuils"><button type="button" data-preset="0.5">0,5</button><button type="button" data-preset="hs"><span class="fr">seuil de validation (98 %)</span><span class="en">validation threshold (98%)</span></button></div>
           </div>
-          <label class="seuil-lib" for="seuil"><span class="fr">Seuil</span><span class="en">Threshold</span> <b id="val-seuil">0,500</b></label>
+          <label class="seuil-lib" for="seuil"><span><span class="fr">Seuil</span><span class="en">Threshold</span></span> <b id="val-seuil">0,500</b></label>
           <input id="seuil" class="seuil" type="range" min="0.001" max="0.999" step="0.001" value="0.5">
           <div class="lecture" aria-live="polite">
-            <div class="mauvais"><b id="l-fn">3</b><span class="fr">pneumonies ratées</span><span class="en">missed pneumonias</span></div>
-            <div class="mauvais"><b id="l-fp">44</b><span class="fr">fausses alertes</span><span class="en">false alarms</span></div>
+            <div class="mauvais"><b id="l-fn">3</b><span class="fr">pneumonies manquées (faux négatifs)</span><span class="en">missed pneumonias (false negatives)</span></div>
+            <div class="mauvais"><b id="l-fp">44</b><span class="fr">fausses alertes (faux positifs)</span><span class="en">false alarms (false positives)</span></div>
             <div><b id="l-sens">0,992</b><span class="fr">sensibilité</span><span class="en">sensitivity</span></div>
             <div><b id="l-spec">0,812</b><span class="fr">spécificité</span><span class="en">specificity</span></div>
           </div>
-          <p class="petit" style="margin:16px 0 0"><span class="fr">Le seuil « haute sensibilité » a été fixé sur la validation, avant de voir le test. Sur le test, il n'a sauvé aucune pneumonie de plus et a ajouté 16 fausses alertes.</span><span class="en">The "high sensitivity" threshold was set on validation, before seeing the test set. On the test set, it caught no extra pneumonia and added 16 false alarms.</span></p>
+          <div class="matrice" role="group" aria-label="Matrice de confusion, mise à jour avec le seuil">
+            <span></span><span class="h"><span class="fr">prédit normal</span><span class="en">predicted normal</span></span><span class="h"><span class="fr">prédit pneumonie</span><span class="en">predicted pneumonia</span></span>
+            <span class="h"><span class="fr">vraie normale</span><span class="en">true normal</span></span><div class="c"><b id="m-vn">190</b><span class="fr">bien reconnues</span><span class="en">correct</span></div><div class="c err"><b id="m-fp">44</b><span class="fr">fausses alertes</span><span class="en">false alarms</span></div>
+            <span class="h"><span class="fr">vraie pneumonie</span><span class="en">true pneumonia</span></span><div class="c err"><b id="m-fn">3</b><span class="fr">manquées</span><span class="en">missed</span></div><div class="c"><b id="m-vp">387</b><span class="fr">détectées</span><span class="en">detected</span></div>
+          </div>
         </div>
-        <div><svg class="roc" id="roc" role="img" aria-label="Courbe ROC sur le test"></svg>
-          <p class="petit"><span class="fr">Cyan : DenseNet-121 (AUC 0,976). Orange : baseline, un petit CNN (AUC 0,926). Le point suit votre seuil.</span><span class="en">Cyan: DenseNet-121 (AUC 0.976). Orange: baseline, a small CNN (AUC 0.926). The dot follows your threshold.</span></p></div>
+        <div>
+          <svg class="roc" id="roc" role="img" aria-label="Courbe ROC sur le test : DenseNet-121 en cyan, baseline en orange ; le point suit le seuil choisi."></svg>
+          <p class="petit compromis"><span class="fr">Cyan : DenseNet-121 (AUC 0,976). Orange : baseline, un petit CNN (AUC 0,926). Le point suit votre seuil.</span><span class="en">Cyan: DenseNet-121 (AUC 0.976). Orange: baseline, a small CNN (AUC 0.926). The dot follows your threshold.</span></p>
+          <p class="prudence"><span class="fr">Le seuil « de validation » (0,206) a été fixé avant de regarder le test, pour détecter au moins 98 % des pneumonies de validation. Sur le test, il n'a rattrapé aucune pneumonie de plus et a ajouté 16 fausses alertes. Choisir un seuil en regardant le test serait de la triche méthodologique : le curseur sert ici à comprendre le compromis, pas à optimiser.</span><span class="en">The "validation" threshold (0.206) was set before looking at the test set, to catch at least 98% of validation pneumonias. On the test set it caught no extra pneumonia and added 16 false alarms. Picking a threshold by looking at the test set would be methodological cheating: this slider is for understanding the trade-off, not for tuning.</span></p>
+        </div>
       </div>
     </div>
 
     <div class="bloc-projet">
       <h3 data-mots><span class="fr">Le piège que j'ai découvert.</span><span class="en">The trap I found.</span></h3>
-      <p><span class="fr">Les images de pneumonie sont plus larges. Leur seule forme suffisait à deviner la classe.</span><span class="en">Pneumonia images are wider. Their shape alone was enough to guess the class.</span></p>
+      <p><span class="fr">En explorant les données, j'ai vu que les images de pneumonie étaient plus larges. Leur seule forme permettait de deviner la classe, sans regarder la radio. Un modèle aurait pu apprendre ce raccourci au lieu des signes de la maladie.</span><span class="en">While exploring the data, I noticed that pneumonia images were wider. Their shape alone was enough to guess the class without looking at the X-ray. A model could have learned this shortcut instead of the signs of disease.</span></p>
       <div class="piege">
-        <div class="carte"><svg class="forme" id="forme" role="img" aria-label="Distribution du rapport largeur/hauteur des images, par classe"></svg></div>
-        <div>
-          <div class="piege-chiffre"><div class="grand grad" data-compteur="0.87" data-dec="2">0,87</div>
-            <p class="petit" style="margin-top:10px"><span class="fr">AUC de la forme seule, sans regarder la radio (0,865 sur le train, 0,704 sur le test).</span><span class="en">AUC of the shape alone, without looking at the X-ray (0.865 on training, 0.704 on test).</span></p></div>
-          <p style="margin-top:22px"><span class="fr">Écraser les images en carré aurait offert ce raccourci au modèle. J'ai recadré au centre, avant tout entraînement.</span><span class="en">Squashing the images into squares would have handed this shortcut to the model. I centre-cropped them before any training.</span></p>
-          <div class="trio">
-            <figure><img src="projet/pretraitement/originale.jpg" alt="Image originale" loading="lazy"><figcaption><span class="fr">Originale</span><span class="en">Original</span></figcaption></figure>
-            <figure><img src="projet/pretraitement/ecrasee.jpg" alt="Image écrasée" loading="lazy"><figcaption><span class="fr">Écrasée</span><span class="en">Squashed</span></figcaption></figure>
-            <figure class="ok"><img src="projet/pretraitement/recadree.jpg" alt="Image recadrée" loading="lazy"><figcaption><span class="fr">Recadrée (retenue)</span><span class="en">Cropped (chosen)</span></figcaption></figure>
-          </div>
+        <div class="carte">
+          <svg class="forme" id="forme" role="img" aria-label="Distribution du rapport largeur sur hauteur des images d'origine : médiane 1,23 pour les normales, 1,49 pour les pneumonies."></svg>
+          <div class="legende"><span><i style="background:var(--cyan)"></i><span class="fr">Radios normales (1 583)</span><span class="en">Normal X-rays (1,583)</span></span><span><i style="background:var(--violet)"></i><span class="fr">Pneumonies (4 273)</span><span class="en">Pneumonia (4,273)</span></span></div>
         </div>
+        <div>
+          <div class="grand grad" data-compteur="0.87" data-dec="2">0,87</div>
+          <p class="petit" style="margin-top:10px;color:var(--texte-2)"><span class="fr">AUC de la forme seule, sans regarder l'image (0,865 sur le train, 0,704 sur le test).</span><span class="en">AUC of the shape alone, without looking at the image (0.865 on training, 0.704 on test).</span></p>
+          <p style="margin-top:18px;color:var(--texte-2)"><span class="fr">Écraser les images en carré aurait transformé cette forme en déformation du thorax. J'ai donc recadré au centre, avant tout entraînement. Cela retire ce raccourci géométrique, mais ne prouve pas que le modèle est sans biais : d'autres différences d'acquisition peuvent subsister.</span><span class="en">Squashing the images into squares would have turned this shape into a distorted chest. So I centre-cropped them before any training. This removes the geometric shortcut, but does not prove the model is unbiased: other acquisition differences may remain.</span></p>
+        </div>
+      </div>
+      <div class="trio">
+        <figure><button type="button" data-agrandir="projet/pretraitement/originale.jpg" data-legende-fr="Image d'origine (rapport 1,92)" data-legende-en="Original image (ratio 1.92)" style="all:unset;display:block;cursor:zoom-in"><img src="projet/pretraitement/originale.jpg" alt="Radiographie d'origine, très large" loading="lazy"></button><figcaption><b><span class="fr">1. Image d'origine</span><span class="en">1. Original image</span></b><span class="fr">rapport largeur/hauteur de 1,92</span><span class="en">width/height ratio of 1.92</span></figcaption></figure>
+        <figure class="mauvais"><button type="button" data-agrandir="projet/pretraitement/ecrasee.jpg" data-legende-fr="Écrasée en carré : le thorax est déformé" data-legende-en="Squashed into a square: the chest is distorted" style="all:unset;display:block;cursor:zoom-in"><img src="projet/pretraitement/ecrasee.jpg" alt="La même image écrasée en carré, déformée" loading="lazy"></button><figcaption><b><span class="fr">2. Écrasée</span><span class="en">2. Squashed</span></b><span class="fr">la forme devient un indice</span><span class="en">the shape becomes a clue</span></figcaption></figure>
+        <figure class="ok"><button type="button" data-agrandir="projet/pretraitement/recadree.jpg" data-legende-fr="Recadrage central retenu : proportions réelles conservées" data-legende-en="Centre crop (chosen): real proportions kept" style="all:unset;display:block;cursor:zoom-in"><img src="projet/pretraitement/recadree.jpg" alt="La même image recadrée au centre, sans déformation" loading="lazy"></button><figcaption><b><span class="fr">3. Recadrée (retenue)</span><span class="en">3. Cropped (chosen)</span></b><span class="fr">proportions réelles, bords coupés</span><span class="en">real proportions, edges cut</span></figcaption></figure>
       </div>
     </div>
 
-    <div class="repliables">
-      <details class="carte"><summary><span class="fr">Méthode</span><span class="en">Method</span></summary><div class="contenu">
-        <ul class="fr"><li>5 856 radiographies d'enfants de 1 à 5 ans, un seul hôpital (Kermany et al., <i>Cell</i>, 2018).</li><li>Validation recréée par patient : aucun enfant à la fois en entraînement et en validation. Un tirage image par image en aurait mis 428 des deux côtés.</li><li>Perte pondérée (74 % de pneumonies), fine-tuning en deux temps, arrêt sur l'AUC de validation.</li><li>Intervalles de confiance par bootstrap sur le test officiel, resté intact jusqu'à la fin.</li><li>Entraîné sur un GPU de 2 Go grâce à la précision mixte et au checkpointing.</li></ul>
-        <ul class="en"><li>5,856 X-rays of children aged 1 to 5, one hospital (Kermany et al., <i>Cell</i>, 2018).</li><li>Validation rebuilt by patient: no child in both training and validation. An image-level split would have put 428 on both sides.</li><li>Weighted loss (74% pneumonia), two-stage fine-tuning, early stopping on validation AUC.</li><li>Bootstrap confidence intervals on the official test set, untouched until the end.</li><li>Trained on a 2 GB GPU thanks to mixed precision and checkpointing.</li></ul>
-      </div></details>
-      <details class="carte"><summary><span class="fr">Ce que montrent les 624 cartes Grad-CAM</span><span class="en">What the 624 Grad-CAM maps show</span></summary><div class="contenu">
-        <p class="fr">En moyenne, 24,7 % de la carte tombe sur les bords de l'image, contre 36 % pour une carte uniforme. Seules 2 cartes sur 624 regardent surtout les bords. Pour les pneumonies prédites, le modèle regarde les poumons.</p>
-        <p class="en">On average, 24.7% of the map falls on the image borders, versus 36% for a uniform map. Only 2 of 624 maps look mostly at the borders. For predicted pneumonia, the model looks at the lungs.</p>
-      </div></details>
-      <details class="carte"><summary><span class="fr">Limites et usage responsable</span><span class="en">Limits and responsible use</span></summary><div class="contenu">
-        <ul class="fr"><li>Des enfants, un seul hôpital : rien ne garantit les performances ailleurs.</li><li>La spécificité chute de 0,995 en validation à 0,812 en test.</li><li>Pas de distinction virale ou bactérienne, aucune autre maladie.</li><li>Grad-CAM ne localise pas une lésion.</li><li>Aucune validation clinique : ce n'est pas un dispositif médical.</li></ul>
-        <ul class="en"><li>Children, one hospital: nothing guarantees performance elsewhere.</li><li>Specificity drops from 0.995 on validation to 0.812 on test.</li><li>No viral/bacterial distinction, no other disease.</li><li>Grad-CAM does not localise a lesion.</li><li>No clinical validation: this is not a medical device.</li></ul>
-      </div></details>
+    <div class="bloc-projet">
+      <h3 data-mots><span class="fr">Méthodologie, étape par étape.</span><span class="en">Methodology, step by step.</span></h3>
+      <ul class="rigueur" aria-label="Ce que j'ai vérifié">
+        <li><span class="fr">Fuite de données évitée (découpage par patient)</span><span class="en">Data leakage avoided (patient-level split)</span></li>
+        <li><span class="fr">Métriques médicales, pas seulement l'accuracy</span><span class="en">Medical metrics, not just accuracy</span></li>
+        <li><span class="fr">Intervalles de confiance (bootstrap)</span><span class="en">Confidence intervals (bootstrap)</span></li>
+        <li><span class="fr">Seuil fixé sur la validation</span><span class="en">Threshold set on validation</span></li>
+        <li><span class="fr">Erreurs analysées une par une</span><span class="en">Errors analysed one by one</span></li>
+        <li><span class="fr">Biais de forme repéré et corrigé</span><span class="en">Shape bias found and corrected</span></li>
+        <li><span class="fr">Limites écrites</span><span class="en">Limits written down</span></li>
+      </ul>
+      <div class="methode">
+        <div class="carte"><h4><span>1</span><span class="fr">Données</span><span class="en">Data</span></h4><p><span class="fr">5 856 radiographies d'enfants (Guangzhou, CC BY 4.0). 74 % de pneumonies dans le train : perte pondérée.</span><span class="en">5,856 children's X-rays (Guangzhou, CC BY 4.0). 74% pneumonia in training: weighted loss.</span></p></div>
+        <div class="carte"><h4><span>2</span><span class="fr">Prétraitement</span><span class="en">Preprocessing</span></h4><p><span class="fr">Niveaux de gris, petit côté à 224 px, recadrage central, normalisation ImageNet. Augmentations légères, sans flip.</span><span class="en">Greyscale, short side to 224 px, centre crop, ImageNet normalisation. Light augmentation, no flips.</span></p></div>
+        <div class="carte"><h4><span>3</span><span class="fr">Séparation</span><span class="en">Splits</span></h4><p><span class="fr">Train 4 484, validation 748 (par patient, 0 enfant commun), test officiel 624. Un tirage image par image en aurait mis 428 des deux côtés.</span><span class="en">Train 4,484, validation 748 (by patient, no shared child), official test 624. An image-level split would have shared 428.</span></p></div>
+        <div class="carte"><h4><span>4</span><span class="fr">Architecture</span><span class="en">Architecture</span></h4><p><span class="fr">DenseNet-121 (ImageNet), une sortie. Baseline : petit CNN de 97 809 paramètres.</span><span class="en">DenseNet-121 (ImageNet), one output. Baseline: a 97,809-parameter CNN.</span></p></div>
+        <div class="carte"><h4><span>5</span><span class="fr">Entraînement</span><span class="en">Training</span></h4><p><span class="fr">Tête seule puis réseau complet, meilleure époque selon l'AUC de validation. GPU de 2 Go : précision mixte et checkpointing.</span><span class="en">Head first, then the full network; best epoch by validation AUC. 2 GB GPU: mixed precision and checkpointing.</span></p></div>
+        <div class="carte"><h4><span>6</span><span class="fr">Métriques</span><span class="en">Metrics</span></h4><p><span class="fr">AUC, sensibilité, spécificité, précision, F1, avec IC 95 % par bootstrap (2 000 tirages du test).</span><span class="en">AUC, sensitivity, specificity, precision, F1, with 95% bootstrap CIs (2,000 resamples).</span></p></div>
+        <div class="carte"><h4><span>7</span><span class="fr">Interprétabilité</span><span class="en">Interpretability</span></h4><p><span class="fr">Grad-CAM sur la dernière couche (7×7). 24,7 % de la carte sur les bords, contre 36 % pour une carte uniforme. Grad-CAM++ donne des cartes presque identiques.</span><span class="en">Grad-CAM on the last layer (7×7). 24.7% of the map on the borders, versus 36% for a uniform map. Grad-CAM++ gives nearly identical maps.</span></p></div>
+        <div class="carte"><h4><span>8</span><span class="fr">Limites</span><span class="en">Limits</span></h4><p><span class="fr">Un hôpital, des enfants ; spécificité de 0,995 en validation et 0,812 en test. Aucune validation externe ni clinique.</span><span class="en">One hospital, children only; specificity 0.995 on validation, 0.812 on test. No external or clinical validation.</span></p></div>
+        <div class="carte"><h4><span>9</span><span class="fr">Reproductibilité</span><span class="en">Reproducibility</span></h4><p><span class="fr">Graine fixe, découpage sauvegardé, versions figées, notebooks exécutés et journal de bord. Les poids ne sont pas publiés.</span><span class="en">Fixed seed, saved split, pinned versions, executed notebooks and a work log. Weights are not published.</span></p></div>
+      </div>
+      <div class="ressources">
+        <a class="carte" href="https://github.com/LamiaeAndof/chest-xray-explainable-ai"><div><b><span class="fr">Code source</span><span class="en">Source code</span></b><small>GitHub · README</small></div><span aria-hidden="true">↗</span></a>
+        <a class="carte" href="https://github.com/LamiaeAndof/chest-xray-explainable-ai/tree/main/notebooks"><div><b>Notebooks</b><small><span class="fr">exploration, entraînement, évaluation, Grad-CAM</span><span class="en">exploration, training, evaluation, Grad-CAM</span></small></div><span aria-hidden="true">↗</span></a>
+        <a class="carte" href="https://github.com/LamiaeAndof/chest-xray-explainable-ai/blob/main/JOURNAL.md"><div><b><span class="fr">Journal de bord</span><span class="en">Work log</span></b><small><span class="fr">problèmes rencontrés et décisions</span><span class="en">problems met and decisions</span></small></div><span aria-hidden="true">↗</span></a>
+        <a class="carte" href="https://github.com/LamiaeAndof/chest-xray-explainable-ai/blob/main/results/tableau_resultats.md"><div><b><span class="fr">Résultats complets</span><span class="en">Full results</span></b><small><span class="fr">tableau avec intervalles de confiance</span><span class="en">table with confidence intervals</span></small></div><span aria-hidden="true">↗</span></a>
+        <a class="carte" href="docs/poster_Lamiae_Andof.pdf"><div><b>Poster (PDF)</b><small><span class="fr">une page, en français</span><span class="en">one page, in French</span></small></div><span aria-hidden="true">↓</span></a>
+        <a class="carte" href="https://doi.org/10.17632/rscbjbr9sj.3"><div><b><span class="fr">Jeu de données</span><span class="en">Dataset</span></b><small>Kermany et al., Mendeley Data (CC BY 4.0)</small></div><span aria-hidden="true">↗</span></a>
+      </div>
     </div>
   </div>
 </section>
+<!-- PROJET:FIN -->
 
-<!-- ============ AUTRES PROJETS ============ -->
+<!-- ============ PROJETS ============ -->
 <section class="chapitre" id="projets" style="padding-top:0">
   <div class="wrap entete-c">
     <div><p class="etiquette"><span class="fr">Projets</span><span class="en">Projects</span></p>
-      <h2 data-mots style="font-size:clamp(2rem,5vw,3.6rem)"><span class="fr">Ce que je construis aussi.</span><span class="en">What else I build.</span></h2></div>
-    <div class="fleches"><button type="button" data-rail="c-projets" data-sens="-1" aria-label="Précédent">←</button><button type="button" data-rail="c-projets" data-sens="1" aria-label="Suivant">→</button></div>
+      <h2 data-mots style="font-size:clamp(2.1rem,5vw,3.6rem)"><span class="fr">Ce que je construis aussi.</span><span class="en">What else I build.</span></h2>
+      <div class="filtres seg" role="group" aria-label="Filtrer les projets">
+        <button type="button" data-filtre="tout" aria-pressed="true"><span class="fr">Tout</span><span class="en">All</span></button>
+        <button type="button" data-filtre="recherche" aria-pressed="false"><span class="fr">Recherche &amp; IA</span><span class="en">Research &amp; AI</span></button>
+        <button type="button" data-filtre="ingenierie" aria-pressed="false"><span class="fr">Engineering &amp; produits</span><span class="en">Engineering &amp; products</span></button>
+      </div></div>
+    <div class="fleches"><button type="button" data-rail="c-projets" data-sens="-1" aria-label="Projet précédent">←</button><button type="button" data-rail="c-projets" data-sens="1" aria-label="Projet suivant">→</button></div>
   </div>
-  <div class="carrousel" id="c-projets"><div class="rail">
-    <article class="carte projet-c" data-tilt>
-      <div class="visuel" style="display:grid;grid-template-columns:1fr 1fr;gap:2px"><img src="projet/cas/VP_radio.jpg" alt="Radiographie" loading="lazy"><img src="projet/cas/VP_cam.jpg" alt="Carte Grad-CAM" loading="lazy"></div>
-      <div class="corps"><span class="statut ok"><span class="fr">Terminé · 2026</span><span class="en">Completed · 2026</span></span>
+  <div class="carrousel" id="c-projets"><div class="rail" tabindex="0" role="region" aria-label="Projets : flèches gauche et droite pour défiler">
+    <article class="carte projet-c" data-famille="recherche" data-tilt>
+      <div class="visuel" style="display:grid;grid-template-columns:1fr 1fr;gap:2px"><img src="projet/cas/VP_radio.jpg" alt="" loading="lazy" width="448" height="448"><img src="projet/cas/VP_cam.jpg" alt="" loading="lazy" width="448" height="448"></div>
+      <div class="corps"><span class="famille"><span class="fr">Recherche &amp; IA</span><span class="en">Research &amp; AI</span></span>
         <h3><span class="fr">IA explicable sur radiographies thoraciques</span><span class="en">Explainable AI on chest X-rays</span></h3>
-        <p><span class="fr">DenseNet-121, Grad-CAM, évaluation honnête.</span><span class="en">DenseNet-121, Grad-CAM, honest evaluation.</span></p>
-        <a class="lien-chap" href="#projet"><span class="fr">Voir le chapitre 5</span><span class="en">See chapter 5</span> →</a></div>
+        <p><span class="fr">DenseNet-121, Grad-CAM et une évaluation qui montre aussi les erreurs.</span><span class="en">DenseNet-121, Grad-CAM, and an evaluation that also shows the errors.</span></p>
+        <ul class="puces"><li>PyTorch</li><li>Grad-CAM</li><li>scikit-learn</li></ul>
+        <div class="actions"><span class="statut ok"><span class="fr">Terminé · 2026</span><span class="en">Completed · 2026</span></span><br><a class="lien-chap" href="#projet"><span class="fr">Voir le projet</span><span class="en">See the project</span> →</a></div></div>
     </article>
-    <article class="carte projet-c" data-tilt>
-      <div class="visuel" data-zoom><figure style="margin:0;height:100%"><img src="img/onzevue/onzevue_tableau_de_bord.webp" width="1400" height="875" alt="ONZEVUE : tableau de bord du staff" loading="lazy"><figcaption hidden><span class="fr">ONZEVUE, tableau de bord du staff (données fictives)</span><span class="en">ONZEVUE, staff dashboard (fictional data)</span></figcaption></figure></div>
-      <div class="corps"><span class="statut encours"><span class="fr">En cours · prototype, données fictives</span><span class="en">Ongoing · prototype, fictional data</span></span>
+    <article class="carte projet-c" data-famille="recherche" data-tilt>
+      <div class="visuel"><img src="img/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.webp" alt="" loading="lazy" width="900" height="695" style="object-fit:contain;background:#fff"></div>
+      <div class="corps"><span class="famille"><span class="fr">Recherche &amp; IA</span><span class="en">Research &amp; AI</span></span>
+        <h3><span class="fr">COVID-19 sur radiographies thoraciques</span><span class="en">COVID-19 on chest X-rays</span></h3>
+        <p><span class="fr">Ma première exploration de l'imagerie médicale, en projet guidé Coursera avec PyTorch.</span><span class="en">My first exploration of medical imaging, as a Coursera guided project with PyTorch.</span></p>
+        <ul class="puces"><li>PyTorch</li><li>Computer Vision</li></ul>
+        <div class="actions"><span class="statut aca"><span class="fr">Projet guidé · 2024</span><span class="en">Guided project · 2024</span></span><br><a class="lien-chap" href="docs/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.pdf"><span class="fr">Voir le certificat</span><span class="en">See the certificate</span> →</a></div></div>
+    </article>
+    <article class="carte projet-c" data-famille="ingenierie" data-tilt>
+      <div class="visuel"><img src="img/onzevue/onzevue_tableau_de_bord.webp" alt="" loading="lazy" width="1400" height="875"></div>
+      <div class="corps"><span class="famille"><span class="fr">Engineering &amp; produits</span><span class="en">Engineering &amp; products</span></span>
         <h3>ONZEVUE</h3>
-        <p><span class="fr">Le suivi de la charge des joueurs de football, avec un étudiant en Master STAPS. J'y apprends à transformer des données humaines en décisions.</span><span class="en">Monitoring football players' training load, with a sports-science master's student. I am learning to turn human data into decisions.</span></p>
-        <details style="margin-top:12px"><summary class="petit" style="cursor:pointer;color:var(--cyan)"><span class="fr">Fonctionnalités</span><span class="en">Features</span></summary>
-          <ul class="petit fr" style="padding-left:1.1em"><li>Tableau de bord : charge interne (durée × RPE), distance GPS, atteinte des cibles.</li><li>Fiche joueur avec recommandation expliquée (« Pourquoi ? »), validée par le staff.</li><li>Wellness : donnée de santé jamais transmise au modèle d'IA.</li><li>Import de fichiers GPS (CSV, Excel).</li><li>En cours : connexion aux appareils par API, prédiction de la charge.</li></ul>
-          <ul class="petit en" style="padding-left:1.1em"><li>Dashboard: internal load (duration × RPE), GPS distance, target achievement.</li><li>Player profile with an explained recommendation ("Why?"), validated by staff.</li><li>Wellness: health data never sent to the AI model.</li><li>GPS file import (CSV, Excel).</li><li>In progress: device connection through APIs, load prediction.</li></ul>
-          <div data-zoom style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
-            <figure style="margin:0"><img src="img/onzevue/onzevue_fiche_joueur.webp" width="1337" height="497" alt="ONZEVUE : fiche joueur" loading="lazy" style="border-radius:8px"><figcaption hidden><span class="fr">Fiche joueur</span><span class="en">Player profile</span></figcaption></figure>
-            <figure style="margin:0"><img src="img/onzevue/onzevue_charges_wellness.webp" width="1322" height="565" alt="ONZEVUE : charges et wellness" loading="lazy" style="border-radius:8px"><figcaption hidden><span class="fr">Charges et wellness</span><span class="en">Load and wellness</span></figcaption></figure>
-            <figure style="margin:0"><img src="img/onzevue/onzevue_import_gps.webp" width="1360" height="527" alt="ONZEVUE : import GPS" loading="lazy" style="border-radius:8px"><figcaption hidden><span class="fr">Import GPS</span><span class="en">GPS import</span></figcaption></figure>
-            <figure style="margin:0"><img src="img/onzevue/onzevue_accueil.webp" width="1005" height="536" alt="ONZEVUE : accueil" loading="lazy" style="border-radius:8px"><figcaption hidden><span class="fr">Accueil</span><span class="en">Home</span></figcaption></figure>
-          </div>
-        </details></div>
+        <p><span class="fr">Le suivi de la charge des joueurs de football, avec un étudiant en Master STAPS. J'y apprends à transformer des données humaines en informations utiles à la décision.</span><span class="en">Monitoring football players' training load, with a sports-science master's student. I am learning to turn human data into information that supports decisions.</span></p>
+        <ul class="puces"><li><span class="fr">Tableaux de bord</span><span class="en">Dashboards</span></li><li><span class="fr">IA explicable</span><span class="en">Explainable AI</span></li><li>Data</li></ul>
+        <div class="actions"><span class="statut encours"><span class="fr">En cours · prototype, données fictives</span><span class="en">Ongoing · prototype, fictional data</span></span><br><button class="lien-chap" type="button" data-fiche="fiche-onzevue" style="background:none;border:0;padding:0;cursor:pointer"><span class="fr">Ouvrir la fiche</span><span class="en">Open the details</span> →</button></div></div>
     </article>
-    <article class="carte projet-c" data-tilt>
-      <div class="visuel" style="display:grid;place-items:center;background:radial-gradient(circle at 30% 30%,#2a2470,#070b1a)"><span style="font:600 2.4rem var(--titre)" class="grad">SHAP · LIME</span></div>
-      <div class="corps"><span class="statut aca"><span class="fr">Académique</span><span class="en">Academic</span></span>
-        <h3><span class="fr">Détection d'absences et de fraude par vision</span><span class="en">Vision-based absence and fraud detection</span></h3>
-        <p><span class="fr">Un modèle de vision, expliqué avec SHAP et LIME.</span><span class="en">A vision model, explained with SHAP and LIME.</span></p></div>
-    </article>
-    <article class="carte projet-c" data-tilt>
-      <div class="visuel" style="display:grid;place-items:center;background:radial-gradient(circle at 70% 30%,#0f4a63,#070b1a)"><span style="font:600 2rem var(--titre)" class="grad"><span class="fr">vidéo · audio · texte</span><span class="en">video · audio · text</span></span></div>
-      <div class="corps"><span class="statut aca"><span class="fr">Académique</span><span class="en">Academic</span></span>
-        <h3><span class="fr">Détection multimodale d'émotions</span><span class="en">Multimodal emotion detection</span></h3>
-        <p><span class="fr">L'analyse conjointe de la vidéo, de l'audio et du texte.</span><span class="en">Joint analysis of video, audio and text.</span></p></div>
+    <article class="carte projet-c" data-famille="ingenierie" data-tilt>
+      <div class="visuel"><img src="img/projet_rfid/prototype_arduino_rfid.webp" alt="" loading="lazy" width="1280" height="960"></div>
+      <div class="corps"><span class="famille"><span class="fr">Engineering &amp; produits</span><span class="en">Engineering &amp; products</span></span>
+        <h3><span class="fr">Détection de triche et gestion des absences</span><span class="en">Cheating detection and attendance management</span></h3>
+        <p><span class="fr">Un projet à sept étudiants, en sprints : de l'étude du matériel à un prototype Arduino + RFID.</span><span class="en">A seven-student project, run in sprints: from studying the hardware to an Arduino + RFID prototype.</span></p>
+        <ul class="puces"><li>RFID</li><li>Arduino</li><li><span class="fr">Base de données</span><span class="en">Database</span></li></ul>
+        <div class="actions"><span class="statut aca"><span class="fr">Académique · prototype · 2025</span><span class="en">Academic · prototype · 2025</span></span><br><button class="lien-chap" type="button" data-fiche="fiche-rfid" style="background:none;border:0;padding:0;cursor:pointer"><span class="fr">Ouvrir la fiche</span><span class="en">Open the details</span> →</button></div></div>
     </article>
   </div></div>
 </section>
 
-<!-- ============ ENGAGEMENT & CERTIFICATS ============ -->
+<!-- ============ ENGAGEMENTS ============ -->
 <section class="chapitre" id="engagement" style="padding-top:0">
-  <div class="wrap entete-c">
-    <div><p class="etiquette"><span class="fr">En dehors des cours</span><span class="en">Beyond classes</span></p>
-      <h2 data-mots style="font-size:clamp(2rem,5vw,3.6rem)"><span class="fr">Créer, organiser, aller voir.</span><span class="en">Create, organise, go and see.</span></h2>
-      <p class="sous" style="margin-top:14px"><span class="fr">Co-fondatrice du club AI Geeks à l'ENSA Tétouan. Cheffe de projet ENACTUS. Membre de la cellule HealthTech de l'AMIIA.</span><span class="en">Co-founder of the AI Geeks club at ENSA Tétouan. ENACTUS project lead. Member of AMIIA's HealthTech unit.</span></p></div>
-    <div class="fleches"><button type="button" data-rail="c-photos" data-sens="-1" aria-label="Précédent">←</button><button type="button" data-rail="c-photos" data-sens="1" aria-label="Suivant">→</button></div>
-  </div>
-  <div class="carrousel" id="c-photos"><div class="rail" data-zoom>
-    <figure class="photo-c"><img src="img/parcours/ai_geeks_evenement_ensa_tetouan.webp" width="960" height="1280" loading="lazy" alt="Événement AI Geeks à l'ENSA Tétouan"><figcaption><span class="fr">Un événement du club AI Geeks, ENSA Tétouan</span><span class="en">An AI Geeks club event, ENSA Tétouan</span></figcaption></figure>
-    <figure class="photo-c"><img src="img/parcours/ai_geeks_interview_press_tetouan.webp" width="853" height="1280" loading="lazy" alt="Interview avec Press Tétouan"><figcaption><span class="fr">Interview accordée à Press Tétouan</span><span class="en">Interview with Press Tétouan</span></figcaption></figure>
-    <figure class="photo-c"><img src="img/parcours/ai_geeks_badge_portrait.webp" width="822" height="1280" loading="lazy" alt="Badge AI Geeks"><figcaption><span class="fr">Co-fondatrice d'AI Geeks</span><span class="en">AI Geeks co-founder</span></figcaption></figure>
-    <figure class="photo-c"><img src="img/evenements/gitex_africa_2025_photo.webp" width="960" height="1280" loading="lazy" alt="GITEX Africa 2025"><figcaption><span class="fr">GITEX Africa, Marrakech, avril 2025</span><span class="en">GITEX Africa, Marrakech, April 2025</span></figcaption></figure>
-    <figure class="photo-c"><img src="img/evenements/gitex_africa_2025_badge.webp" width="960" height="1280" loading="lazy" alt="Badge GITEX Africa 2025"><figcaption><span class="fr">Visiteuse au nom d'AI Geeks</span><span class="en">Visitor on behalf of AI Geeks</span></figcaption></figure>
-  </div></div>
+  <div class="wrap">
+    <p class="etiquette"><span class="fr">Au-delà du code</span><span class="en">Beyond code</span></p>
+    <h2 data-mots style="font-size:clamp(2.1rem,5vw,3.6rem)"><span class="fr">Créer, organiser, aller voir.</span><span class="en">Create, organise, go and see.</span></h2>
+    <div class="galerie">
+      <figure class="grande"><button type="button" data-agrandir="img/parcours/ai_geeks_evenement_ensa_tetouan.webp" data-legende-fr="Événement du club AI Geeks, ENSA Tétouan" data-legende-en="AI Geeks club event, ENSA Tétouan"><img src="img/parcours/ai_geeks_evenement_ensa_tetouan.webp" width="960" height="1280" loading="lazy" alt="Lamiae lors d'un événement du club AI Geeks à l'ENSA Tétouan"></button>
+        <figcaption><b><span class="fr">Événement AI Geeks · ENSA Tétouan</span><span class="en">AI Geeks event · ENSA Tétouan</span></b><span class="fr">Co-fondatrice du club. Organiser, c'est aussi apprendre.</span><span class="en">Club co-founder. Organising is also a way to learn.</span></figcaption></figure>
+      <figure><button type="button" data-agrandir="img/parcours/ai_geeks_interview_press_tetouan.webp" data-legende-fr="Interview accordée à Press Tétouan lors d'un événement du club AI Geeks" data-legende-en="Interview with Press Tétouan during an AI Geeks club event"><img src="img/parcours/ai_geeks_interview_press_tetouan.webp" width="853" height="1280" loading="lazy" alt="Interview avec Press Tétouan"></button>
+        <figcaption><b><span class="fr">Interview · Press Tétouan</span><span class="en">Interview · Press Tétouan</span></b><span class="fr">Lors d'un événement du club, pour présenter AI Geeks.</span><span class="en">During a club event, presenting AI Geeks.</span></figcaption></figure>
+      <figure><button type="button" data-agrandir="img/evenements/gitex_africa_2025_photo.webp" data-legende-fr="GITEX Africa, Marrakech, 14-16 avril 2025" data-legende-en="GITEX Africa, Marrakech, 14–16 April 2025"><img src="img/evenements/gitex_africa_2025_photo.webp" width="960" height="1280" loading="lazy" alt="Lamiae au GITEX Africa 2025"></button>
+        <figcaption><b>GITEX Africa · <span class="fr">avril 2025</span><span class="en">April 2025</span></b><span class="fr">Marrakech, visiteuse au nom du club AI Geeks.</span><span class="en">Marrakech, visitor on behalf of the AI Geeks club.</span></figcaption></figure>
+      <figure><button type="button" data-agrandir="img/parcours/ai_geeks_badge_portrait.webp" data-legende-fr="Badge AI Geeks" data-legende-en="AI Geeks badge"><img src="img/parcours/ai_geeks_badge_portrait.webp" width="822" height="1280" loading="lazy" alt="Lamiae avec son badge AI Geeks"></button>
+        <figcaption><b>AI Geeks</b><span class="fr">Le club d'IA que j'ai co-fondé à l'ENSA Tétouan.</span><span class="en">The AI club I co-founded at ENSA Tétouan.</span></figcaption></figure>
+      <figure><button type="button" data-agrandir="img/evenements/gitex_africa_2025_badge.webp" data-legende-fr="Badge GITEX Africa 2025" data-legende-en="GITEX Africa 2025 badge"><img src="img/evenements/gitex_africa_2025_badge.webp" width="960" height="1280" loading="lazy" alt="Badge GITEX Africa 2025"></button>
+        <figcaption><b>GITEX Africa 2025</b><span class="fr">14-16 avril, Marrakech.</span><span class="en">14–16 April, Marrakech.</span></figcaption></figure>
+    </div>
+    <div class="engagements" data-serie>
+      <div class="carte"><span class="tuile" style="height:56px;min-width:56px"><img src="img/logos/ai_geeks.webp" alt="" width="400" height="400" loading="lazy" style="height:42px"></span><div><h3 style="font-size:1.15rem">AI Geeks</h3><p><span class="fr">Co-fondatrice. Certificat de leadership pour l'événement AI Geeks × Microsoft Moroccan Community.</span><span class="en">Co-founder. Leadership certificate for the AI Geeks × Microsoft Moroccan Community event.</span></p></div></div>
+      <div class="carte"><div><h3 style="font-size:1.15rem">AMIIA · HealthTech</h3><p><span class="fr">Membre de la cellule HealthTech de l'Association Marocaine pour l'Innovation en IA.</span><span class="en">Member of the HealthTech unit of the Moroccan Association for Innovation in AI.</span></p></div></div>
+      <div class="carte"><div><h3 style="font-size:1.15rem">ENACTUS</h3><p><span class="fr">Cheffe de projet.</span><span class="en">Project lead.</span></p></div></div>
+    </div>
 
-  <div class="wrap entete-c" style="margin-top:clamp(60px,8vw,100px)">
-    <h3 style="font-size:clamp(1.6rem,3vw,2.2rem)"><span class="fr">Certificats</span><span class="en">Certificates</span></h3>
-    <div class="fleches"><button type="button" data-rail="c-certifs" data-sens="-1" aria-label="Précédent">←</button><button type="button" data-rail="c-certifs" data-sens="1" aria-label="Suivant">→</button></div>
+    <div class="entete-c ancre" id="certificats" style="margin-top:clamp(60px,8vw,96px)">
+      <h3 style="font-size:clamp(1.6rem,3vw,2.2rem)"><span class="fr">Certificats</span><span class="en">Certificates</span></h3>
+      <button class="btn" id="tous-certifs" type="button" aria-expanded="false" aria-controls="liste-certifs"><span class="fr">Voir tous les certificats (6)</span><span class="en">See all certificates (6)</span></button>
+    </div>
+    <div class="certifs" id="liste-certifs">
+      <button class="carte certif-c sante" type="button" data-agrandir="img/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.webp" data-pdf="docs/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.pdf" data-legende-fr="Detecting COVID-19 with Chest X-Ray using PyTorch, Coursera Project Network, 18 mai 2024" data-legende-en="Detecting COVID-19 with Chest X-Ray using PyTorch, Coursera Project Network, 18 May 2024"><img src="img/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.webp" width="900" height="695" loading="lazy" alt="Certificat Detecting COVID-19 with Chest X-Ray using PyTorch"><span class="corps"><b>Detecting COVID-19 with Chest X-Ray using PyTorch</b><span>Coursera Project Network · <span class="fr">18 mai 2024</span><span class="en">18 May 2024</span></span></span></button>
+      <button class="carte certif-c" type="button" data-agrandir="img/certificats/hugging_face_ai_agents_course_excellence_2025.webp" data-pdf="docs/certificats/hugging_face_ai_agents_course_excellence_2025.pdf" data-legende-fr="Certificate of Excellence, AI Agents Course, Hugging Face, 19 septembre 2025" data-legende-en="Certificate of Excellence, AI Agents Course, Hugging Face, 19 September 2025"><img src="img/certificats/hugging_face_ai_agents_course_excellence_2025.webp" width="900" height="636" loading="lazy" alt="Certificat Hugging Face AI Agents Course"><span class="corps"><b>Certificate of Excellence, AI Agents Course</b><span>Hugging Face · <span class="fr">19 septembre 2025</span><span class="en">19 September 2025</span></span></span></button>
+      <button class="carte certif-c" type="button" data-agrandir="img/certificats/ai_geeks_certificat_leadership_ensa_microsoft.webp" data-pdf="docs/certificats/ai_geeks_certificat_leadership_ensa_microsoft.pdf" data-legende-fr="Certificate of Leadership, AI Geeks × Microsoft Moroccan Community" data-legende-en="Certificate of Leadership, AI Geeks × Microsoft Moroccan Community"><img src="img/certificats/ai_geeks_certificat_leadership_ensa_microsoft.webp" width="900" height="633" loading="lazy" alt="Certificat de leadership AI Geeks"><span class="corps"><b>Certificate of Leadership</b><span>AI Geeks / ENSA Tétouan · Microsoft Moroccan Community</span></span></button>
+      <button class="carte certif-c certif-extra" hidden type="button" data-agrandir="img/certificats/ai_geeks_certificat_excellence_github_copilot.webp" data-pdf="docs/certificats/ai_geeks_certificat_excellence_github_copilot.pdf" data-legende-fr="Certificate of Excellence, sessions « GitHub Copilot Usecases », AI Geeks" data-legende-en="Certificate of Excellence, &quot;GitHub Copilot Usecases&quot; sessions, AI Geeks"><img src="img/certificats/ai_geeks_certificat_excellence_github_copilot.webp" width="900" height="633" loading="lazy" alt="Certificat d'excellence GitHub Copilot Usecases"><span class="corps"><b>Certificate of Excellence</b><span>AI Geeks · « GitHub Copilot Usecases »</span></span></button>
+      <button class="carte certif-c certif-extra" hidden type="button" data-agrandir="img/certificats/coursera_overview_data_visualization_2024.webp" data-pdf="docs/certificats/coursera_overview_data_visualization_2024.pdf" data-legende-fr="Overview of Data Visualization, Coursera Project Network, 18 mai 2024" data-legende-en="Overview of Data Visualization, Coursera Project Network, 18 May 2024"><img src="img/certificats/coursera_overview_data_visualization_2024.webp" width="900" height="695" loading="lazy" alt="Certificat Overview of Data Visualization"><span class="corps"><b>Overview of Data Visualization</b><span>Coursera Project Network · <span class="fr">18 mai 2024</span><span class="en">18 May 2024</span></span></span></button>
+      <button class="carte certif-c certif-extra" hidden type="button" data-agrandir="img/certificats/coursera_power_bi_storytelling_2024.webp" data-pdf="docs/certificats/coursera_power_bi_storytelling_2024.pdf" data-legende-fr="Data Visualization with Power BI: Storytelling with Data, Coursera Project Network, 6 mai 2024" data-legende-en="Data Visualization with Power BI: Storytelling with Data, Coursera Project Network, 6 May 2024"><img src="img/certificats/coursera_power_bi_storytelling_2024.webp" width="900" height="695" loading="lazy" alt="Certificat Power BI Storytelling with Data"><span class="corps"><b>Data Visualization with Power BI: Storytelling with Data</b><span>Coursera Project Network · <span class="fr">6 mai 2024</span><span class="en">6 May 2024</span></span></span></button>
+    </div>
   </div>
-  <div class="carrousel" id="c-certifs" style="margin-top:24px"><div class="rail">
-    <a class="carte certif-c sante" data-tilt href="docs/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.pdf"><img src="img/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.webp" width="900" height="695" loading="lazy" alt=""><div class="corps"><b>Detecting COVID-19 with Chest X-Ray using PyTorch</b><span>Coursera · <span class="fr">18 mai 2024</span><span class="en">18 May 2024</span></span></div></a>
-    <a class="carte certif-c" data-tilt href="docs/certificats/hugging_face_ai_agents_course_excellence_2025.pdf"><img src="img/certificats/hugging_face_ai_agents_course_excellence_2025.webp" width="900" height="636" loading="lazy" alt=""><div class="corps"><b>Certificate of Excellence, AI Agents Course</b><span>Hugging Face · <span class="fr">19 septembre 2025</span><span class="en">19 September 2025</span></span></div></a>
-    <a class="carte certif-c" data-tilt href="docs/certificats/ai_geeks_certificat_leadership_ensa_microsoft.pdf"><img src="img/certificats/ai_geeks_certificat_leadership_ensa_microsoft.webp" width="900" height="633" loading="lazy" alt=""><div class="corps"><b>Certificate of Leadership</b><span>AI Geeks × Microsoft Moroccan Community</span></div></a>
-    <a class="carte certif-c" data-tilt href="docs/certificats/ai_geeks_certificat_excellence_github_copilot.pdf"><img src="img/certificats/ai_geeks_certificat_excellence_github_copilot.webp" width="900" height="633" loading="lazy" alt=""><div class="corps"><b>Certificate of Excellence</b><span>« GitHub Copilot Usecases », AI Geeks</span></div></a>
-    <a class="carte certif-c" data-tilt href="docs/certificats/coursera_overview_data_visualization_2024.pdf"><img src="img/certificats/coursera_overview_data_visualization_2024.webp" width="900" height="695" loading="lazy" alt=""><div class="corps"><b>Overview of Data Visualization</b><span>Coursera · <span class="fr">18 mai 2024</span><span class="en">18 May 2024</span></span></div></a>
-    <a class="carte certif-c" data-tilt href="docs/certificats/coursera_power_bi_storytelling_2024.pdf"><img src="img/certificats/coursera_power_bi_storytelling_2024.webp" width="900" height="695" loading="lazy" alt=""><div class="corps"><b>Data Visualization with Power BI: Storytelling with Data</b><span>Coursera · <span class="fr">6 mai 2024</span><span class="en">6 May 2024</span></span></div></a>
-  </div></div>
 </section>
 
 <!-- ============ CHAPITRE 6 — CE QUE JE VISE ============ -->
@@ -413,8 +574,12 @@
   <div class="wrap">
     <p class="etiquette"><span class="fr">Chapitre 6 · Ce que je vise</span><span class="en">Chapter 6 · What I aim for</span></p>
     <h2 data-mots><span class="fr">Concevoir des outils d'IA <span class="grad">fiables et explicables</span>, au service des soignants.</span><span class="en">Building <span class="grad">reliable, explainable</span> AI tools that serve caregivers.</span></h2>
-    <p class="sous"><span class="fr">Il me manque la connaissance clinique : lire une image médicale, comprendre le parcours de soin et ses règles. C'est ce que je viens apprendre.</span><span class="en">What I lack is clinical knowledge: reading a medical image, understanding the care pathway and its rules. That is what I want to learn.</span></p>
-    <div class="cible apparait"><span><span class="fr">Master en IA appliquée à la santé</span><span class="en">Master's in AI for health</span></span><span><span class="fr">Imagerie médicale</span><span class="en">Medical imaging</span></span><span><span class="fr">France · rentrée 2027</span><span class="en">France · from 2027</span></span></div>
+    <p class="sous"><span class="fr">Mon parcours m'a appris à construire des systèmes d'IA. Aujourd'hui, je veux aller plus loin : comprendre les réalités médicales, les données de santé et les exigences cliniques, pour développer des solutions réellement utiles, évaluées avec rigueur.</span><span class="en">My path taught me to build AI systems. Now I want to go further: understand medical realities, health data and clinical requirements, to build solutions that are truly useful and rigorously evaluated.</span></p>
+    <div class="directions" data-serie>
+      <div class="carte" data-tilt><div class="verbe grad"><span class="fr">Approfondir</span><span class="en">Deepen</span></div><p><span class="fr">Un master spécialisé en IA appliquée à la santé, en imagerie médicale ou en ingénierie de la santé, en France, à la rentrée 2027.</span><span class="en">A specialised master's in AI for health, medical imaging or health engineering, in France, from autumn 2027.</span></p></div>
+      <div class="carte" data-tilt><div class="verbe grad"><span class="fr">Explorer</span><span class="en">Explore</span></div><p><span class="fr">La recherche, des collaborations scientifiques et, à terme, des opportunités doctorales en IA, Computer Vision et santé.</span><span class="en">Research, scientific collaborations and, in time, doctoral opportunities in AI, computer vision and health.</span></p></div>
+      <div class="carte" data-tilt><div class="verbe grad"><span class="fr">Construire</span><span class="en">Build</span></div><p><span class="fr">Des opportunités professionnelles en IA, Data Science, Computer Vision et IA générative.</span><span class="en">Professional opportunities in AI, data science, computer vision and generative AI.</span></p></div>
+    </div>
   </div>
 </section>
 
@@ -423,10 +588,12 @@
   <div class="wrap">
     <p class="etiquette">Contact</p>
     <h2 data-mots><span class="fr">Parlons-en.</span><span class="en">Let's talk.</span></h2>
+    <p class="sous"><span class="fr">Une idée de recherche, un projet d'IA, ou simplement l'envie d'échanger ? Écrivez-moi. Les belles collaborations commencent souvent par un simple bonjour.</span><span class="en">A research idea, an AI project, or simply a wish to talk? Write to me. Good collaborations often start with a simple hello.</span></p>
     <div class="liens" data-serie>
-      <a class="carte" data-tilt href="https://github.com/LamiaeAndof"><div>GitHub<small>github.com/LamiaeAndof</small></div><span>↗</span></a>
-      <a class="carte" data-tilt href="https://www.linkedin.com/in/lamiaeandof"><div>LinkedIn<small>linkedin.com/in/lamiaeandof</small></div><span>↗</span></a>
-      <a class="carte" data-tilt href="docs/CV_Lamiae_Andof.pdf" download><div><span class="fr">Mon CV</span><span class="en">My resume</span><small>PDF</small></div><span>↓</span></a>
+      <a class="carte principal" href="mailto:lamiaeandof3@gmail.com"><div><span class="fr">M'écrire</span><span class="en">Email me</span><small>lamiaeandof3@gmail.com</small></div><span aria-hidden="true">→</span></a>
+      <a class="carte" data-tilt href="https://www.linkedin.com/in/lamiaeandof"><div>LinkedIn<small>in/lamiaeandof</small></div><span aria-hidden="true">↗</span></a>
+      <a class="carte" data-tilt href="https://github.com/LamiaeAndof"><div>GitHub<small>LamiaeAndof</small></div><span aria-hidden="true">↗</span></a>
+      <a class="carte" data-tilt href="docs/CV_Lamiae_Andof.pdf" download><div><span class="fr">Mon CV</span><span class="en">My resume</span><small><span class="fr">PDF, en français</span><span class="en">PDF, in French</span></small></div><span aria-hidden="true">↓</span></a>
     </div>
   </div>
 </section>
@@ -434,15 +601,57 @@
 
 <footer>
   <div class="wrap">
-    <span class="fr">© 2026 Lamiae Andof · Fès, Maroc. Le projet radiographies est pédagogique : ce n'est pas un outil de diagnostic. Données : Kermany et al., 2018 (CC BY 4.0).</span>
-    <span class="en">© 2026 Lamiae Andof · Fès, Morocco. The X-ray project is educational: it is not a diagnostic tool. Data: Kermany et al., 2018 (CC BY 4.0).</span>
+    <p><span class="fr">© 2026 Lamiae Andof · Fès, Maroc.</span><span class="en">© 2026 Lamiae Andof · Fès, Morocco.</span></p>
+    <p><span class="fr">Le projet radiographies est pédagogique et expérimental : ce n'est pas un dispositif médical. Données : Kermany et al., 2018 (CC BY 4.0).</span><span class="en">The X-ray project is educational and experimental: it is not a medical device. Data: Kermany et al., 2018 (CC BY 4.0).</span></p>
+    <p><span class="fr">Réalisé avec three.js, GSAP et Lenis. Les logos appartiennent à leurs organisations respectives.</span><span class="en">Built with three.js, GSAP and Lenis. Logos belong to their respective organisations.</span></p>
   </div>
 </footer>
 
-<script src="vendor/three.min.js"></script>
-<script src="vendor/gsap.min.js"></script>
-<script src="vendor/ScrollTrigger.min.js"></script>
-<script src="vendor/lenis.min.js"></script>
-<script src="assets/site.js"></script>
+<!-- Fiches détaillées -->
+<dialog class="fiche" id="fiche-onzevue" aria-labelledby="t-onzevue"><div class="contenu">
+  <button class="fermer" type="button" aria-label="Fermer">×</button>
+  <span class="statut encours"><span class="fr">En cours · prototype, données fictives</span><span class="en">Ongoing · prototype, fictional data</span></span>
+  <h3 id="t-onzevue">ONZEVUE</h3>
+  <p><span class="fr">Une plateforme de suivi de la charge et de la performance des joueurs de football, développée avec un étudiant en Master STAPS. J'y apprends à transformer des données humaines en informations utiles à la décision.</span><span class="en">A platform to monitor football players' load and performance, built with a sports-science (STAPS) master's student. I am learning to turn human data into information that supports decisions.</span></p>
+  <h4><span class="fr">Comment ça marche</span><span class="en">How it works</span></h4>
+  <div class="flux"><span><span class="fr">Fichiers GPS (CSV, Excel)</span><span class="en">GPS files (CSV, Excel)</span></span><i>→</i><span><span class="fr">Charge interne (durée × RPE), distance, cibles</span><span class="en">Internal load (duration × RPE), distance, targets</span></span><i>→</i><span><span class="fr">Recommandation expliquée</span><span class="en">Explained recommendation</span></span><i>→</i><span><span class="fr">Validation par le staff</span><span class="en">Staff validation</span></span></div>
+  <h4><span class="fr">Ce qui fonctionne</span><span class="en">What works</span></h4>
+  <ul><li><span class="fr">Tableau de bord du staff, vue du microcycle.</span><span class="en">Staff dashboard, microcycle view.</span></li><li><span class="fr">Fiche joueur avec une recommandation expliquée (« Pourquoi ? »), à valider par le staff.</span><span class="en">Player profile with an explained recommendation ("Why?"), to be validated by staff.</span></li><li><span class="fr">Saisie du wellness : une donnée de santé jamais transmise au modèle d'IA.</span><span class="en">Wellness entry: health data never sent to the AI model.</span></li><li><span class="fr">Import de fichiers GPS.</span><span class="en">GPS file import.</span></li></ul>
+  <h4><span class="fr">Limites du prototype</span><span class="en">Prototype limits</span></h4>
+  <ul><li><span class="fr">Les données affichées sont fictives.</span><span class="en">The data shown is fictional.</span></li><li><span class="fr">En cours de développement : la connexion directe aux appareils par API et les modèles de prédiction de la charge.</span><span class="en">In development: direct device connection through APIs and load prediction models.</span></li></ul>
+  <div class="vignettes">
+    <button type="button" data-agrandir="img/onzevue/onzevue_tableau_de_bord.webp" data-legende-fr="ONZEVUE : tableau de bord du staff (données fictives)" data-legende-en="ONZEVUE: staff dashboard (fictional data)"><img src="img/onzevue/onzevue_tableau_de_bord.webp" alt="Tableau de bord du staff" loading="lazy" width="1400" height="875"></button>
+    <button type="button" data-agrandir="img/onzevue/onzevue_fiche_joueur.webp" data-legende-fr="ONZEVUE : fiche joueur et recommandation expliquée" data-legende-en="ONZEVUE: player profile and explained recommendation"><img src="img/onzevue/onzevue_fiche_joueur.webp" alt="Fiche joueur" loading="lazy" width="1337" height="497"></button>
+    <button type="button" data-agrandir="img/onzevue/onzevue_charges_wellness.webp" data-legende-fr="ONZEVUE : charges et wellness" data-legende-en="ONZEVUE: load and wellness"><img src="img/onzevue/onzevue_charges_wellness.webp" alt="Charges et wellness" loading="lazy" width="1322" height="565"></button>
+    <button type="button" data-agrandir="img/onzevue/onzevue_import_gps.webp" data-legende-fr="ONZEVUE : import des fichiers GPS" data-legende-en="ONZEVUE: GPS file import"><img src="img/onzevue/onzevue_import_gps.webp" alt="Import GPS" loading="lazy" width="1360" height="527"></button>
+  </div>
+</div></dialog>
+
+<dialog class="fiche" id="fiche-rfid" aria-labelledby="t-rfid"><div class="contenu">
+  <button class="fermer" type="button" aria-label="Fermer">×</button>
+  <span class="statut aca"><span class="fr">Projet académique · prototype · 2025</span><span class="en">Academic project · prototype · 2025</span></span>
+  <h3 id="t-rfid"><span class="fr">Détection de triche et gestion des absences</span><span class="en">Cheating detection and attendance management</span></h3>
+  <p><span class="fr">Un projet en équipe de sept étudiants à l'ENSA Tétouan, encadré par le Pr Otman Aghzout. Nous avons avancé en sprints : étude du matériel, conception de l'architecture, puis un premier prototype.</span><span class="en">A seven-student team project at ENSA Tétouan, supervised by Prof. Otman Aghzout. We worked in sprints: hardware study, architecture design, then a first prototype.</span></p>
+  <h4><span class="fr">Architecture</span><span class="en">Architecture</span></h4>
+  <div class="flux"><span>RFID</span><i>→</i><span><span class="fr">Microcontrôleur</span><span class="en">Microcontroller</span></span><i>→</i><span><span class="fr">Serveur</span><span class="en">Server</span></span><i>→</i><span><span class="fr">Base de données</span><span class="en">Database</span></span></div>
+  <h4><span class="fr">Où nous en sommes</span><span class="en">Where we got to</span></h4>
+  <p><span class="fr">Un prototype Arduino + RFID. C'est un prototype académique, pas un système déployé.</span><span class="en">An Arduino + RFID prototype. It is an academic prototype, not a deployed system.</span></p>
+  <div class="vignettes">
+    <button type="button" data-agrandir="img/projet_rfid/architecture_detection_triche_gestion_absences.webp" data-legende-fr="Vue d'ensemble du projet : détection de triche et gestion des absences" data-legende-en="Project overview: cheating detection and attendance management"><img src="img/projet_rfid/architecture_detection_triche_gestion_absences.webp" alt="Schéma d'ensemble du projet" loading="lazy" width="1400" height="788"></button>
+    <button type="button" data-agrandir="img/projet_rfid/architecture_rfid_camera_serveur.webp" data-legende-fr="Étude du matériel et premiers montages" data-legende-en="Hardware study and first set-ups"><img src="img/projet_rfid/architecture_rfid_camera_serveur.webp" alt="Étude du matériel" loading="lazy" width="1400" height="788"></button>
+    <button type="button" data-agrandir="img/projet_rfid/prototype_arduino_rfid.webp" data-legende-fr="Prototype Arduino + RFID" data-legende-en="Arduino + RFID prototype"><img src="img/projet_rfid/prototype_arduino_rfid.webp" alt="Prototype Arduino et RFID" loading="lazy" width="1280" height="960"></button>
+  </div>
+</div></dialog>
+
+<dialog class="visionneuse" id="visionneuse" aria-label="Image agrandie"><div class="boite">
+  <button class="fermer" type="button" aria-label="Fermer">×</button>
+  <div class="media"><img alt=""></div>
+  <div class="texte"><p></p><a class="btn" href="#" target="_blank" rel="noopener" hidden><span class="fr">Ouvrir le PDF</span><span class="en">Open the PDF</span></a></div>
+</div></dialog>
+
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="vendor/lenis.min.js" defer></script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
