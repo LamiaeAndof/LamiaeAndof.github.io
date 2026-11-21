@@ -30,7 +30,7 @@ entete = re.search(r'(<a class="evitement".*?<nav class="menu-mobile".*?</nav>)'
 entete = re.sub(r'href="#(origines|construit|sante|projets|engagement|certificats|vise|contact|moi)"', r'href="index.html#\1"', entete)
 dialogues = re.search(r'(<dialog class="visionneuse".*?</dialog>)', corps, re.S).group(1)
 pied = re.search(r"(<footer>.*?</footer>)", corps, re.S).group(1)
-scripts = corps[corps.index('<script src="vendor/gsap.min.js"'):]
+scripts = corps[corps.index('<script src="vendor/gsap.min.js'):]
 retour = """<section class="chapitre" style="padding-top:0"><div class="wrap" style="text-align:center">
   <h2 style="font-size:clamp(1.8rem,4vw,3rem)"><span class="fr">Ce projet fait partie d'une histoire plus longue.</span><span class="en">This project is part of a longer story.</span></h2>
   <div class="boutons" style="justify-content:center"><a class="btn plein" href="index.html"><span class="fr">Découvrir mon parcours</span><span class="en">Discover my path</span> <span class="fleche" aria-hidden="true">→</span></a>

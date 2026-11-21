@@ -23,7 +23,7 @@
 <link rel="preload" href="fonts/sora-latin-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter-latin-1.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="img/profil.webp" fetchpriority="high">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css?v=5">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Lamiae Andof","jobTitle":"Ingénieure d'État en Data Science, Big Data & IA","url":"https://lamiaeandof.github.io/","image":"https://lamiaeandof.github.io/img/profil.webp","email":"mailto:lamiaeandof3@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Fès","addressCountry":"MA"},"alumniOf":{"@type":"CollegeOrUniversity","name":"ENSA Tétouan, Université Abdelmalek Essaâdi"},"knowsAbout":["Computer Vision","Explainable AI","Medical imaging","Retrieval-Augmented Generation"],"sameAs":["https://github.com/LamiaeAndof","https://www.linkedin.com/in/lamiaeandof"]}</script>
 </head>
 <body>
@@ -584,20 +584,44 @@
       <div class="carte" data-tilt><div class="verbe grad"><span class="fr">Explorer</span><span class="en">Explore</span></div><p><span class="fr">La recherche, des collaborations scientifiques et, à terme, des opportunités doctorales en IA, Computer Vision et santé.</span><span class="en">Research, scientific collaborations and, in time, doctoral opportunities in AI, computer vision and health.</span></p></div>
       <div class="carte" data-tilt><div class="verbe grad"><span class="fr">Construire</span><span class="en">Build</span></div><p><span class="fr">Des opportunités professionnelles en IA, Data Science, Computer Vision et IA générative.</span><span class="en">Professional opportunities in AI, data science, computer vision and generative AI.</span></p></div>
     </div>
-    <div class="jury carte apparait" id="jury">
-      <h3><span class="fr">Pour le jury, en un coup d'œil</span><span class="en">For the admissions panel, at a glance</span></h3>
-      <dl class="jury-grille">
-        <div><dt><span class="fr">Formation</span><span class="en">Education</span></dt><dd><span class="fr">Ingénieure d'État en Data Science, Big Data &amp; IA, ENSA Tétouan (2026), mention Bien. Projet de fin d'études : 19/20.</span><span class="en">State engineer in Data Science, Big Data &amp; AI, ENSA Tétouan (2026), with honours. Final-year project: 19/20.</span></dd></div>
-        <div><dt><span class="fr">Progression</span><span class="en">Progress</span></dt><dd><span class="fr">Une moyenne passée de 13,31 à 17,5/20, mention Très Bien, au fil du cycle ingénieur.</span><span class="en">An average that rose from 13.31 to 17.5/20, highest honours, across the engineering cycle.</span></dd></div>
-        <div><dt><span class="fr">Preuve en imagerie médicale</span><span class="en">Medical imaging evidence</span></dt><dd><span class="fr">Un projet complet sur radiographies : découpage par patient, intervalles de confiance, Grad-CAM, et un biais découvert puis corrigé.</span><span class="en">A complete X-ray project: patient-level split, confidence intervals, Grad-CAM, and a bias found then corrected.</span></dd></div>
-        <div><dt><span class="fr">Expérience</span><span class="en">Experience</span></dt><dd><span class="fr">Vision par ordinateur en temps réel au port de Tanger Med ; évaluation rigoureuse d'un assistant RAG chez OCP Solutions.</span><span class="en">Real-time computer vision at the port of Tanger Med; rigorous evaluation of a RAG assistant at OCP Solutions.</span></dd></div>
-        <div><dt><span class="fr">Ouverture à la santé</span><span class="en">Health exposure</span></dt><dd><span class="fr">Membre de la cellule HealthTech de l'AMIIA ; déléguée au GITEX Future Health Africa ; participante à AI-MEDX 2026.</span><span class="en">Member of AMIIA's HealthTech unit; delegate at GITEX Future Health Africa; attendee at AI-MEDX 2026.</span></dd></div>
-        <div><dt><span class="fr">Français</span><span class="en">French</span></dt><dd><span class="fr">Niveau B2 (TCF, 465 points).</span><span class="en">B2 level (TCF, 465 points).</span></dd></div>
-      </dl>
-      <div class="jury-bas">
-        <div><h4><span class="fr">Ce que je viens chercher en master</span><span class="en">What I am looking for in a master's</span></h4>
-          <p><span class="fr">Les bases médicales et la lecture des images, les données de santé et le parcours de soin, l'évaluation clinique et le cadre réglementaire, et une première expérience de recherche.</span><span class="en">Medical foundations and image reading, health data and the care pathway, clinical evaluation and regulation, and a first research experience.</span></p></div>
-        <div class="boutons" style="margin-top:0">
+    <div class="jury" id="jury">
+      <h3 class="jury-titre"><span class="fr">Pour le jury, en un coup d'œil</span><span class="en">For the admissions panel, at a glance</span></h3>
+      <div class="bento" data-serie>
+        <div class="tuile-b large carte" data-tilt>
+          <span class="tuile"><img src="img/logos/ensa_tetouan.webp" alt="ENSA Tétouan" width="200" height="200" loading="lazy"></span>
+          <div><b class="gros"><span class="fr">Ingénieure d'État</span><span class="en">State engineer</span></b>
+          <span class="leg"><span class="fr">Data Science, Big Data &amp; IA · 2026 · mention Bien</span><span class="en">Data Science, Big Data &amp; AI · 2026 · with honours</span></span></div>
+        </div>
+        <div class="tuile-b carte" data-tilt>
+          <svg viewBox="0 0 160 70" class="mini-courbe" aria-hidden="true"><defs><linearGradient id="gj" x1="0" x2="1"><stop offset="0" stop-color="#8f7bff"/><stop offset="1" stop-color="#3ad7ff"/></linearGradient></defs>
+            <path d="M8 58 C 50 48, 60 30, 80 30 S 130 10, 152 8" fill="none" stroke="url(#gj)" stroke-width="5" stroke-linecap="round"/><circle cx="152" cy="8" r="6" fill="#3ad7ff"/></svg>
+          <b class="gros">13,31 → 17,5</b><span class="leg"><span class="fr">ma progression sur 20</span><span class="en">my progress out of 20</span></span>
+        </div>
+        <div class="tuile-b carte" data-tilt><b class="gros grad">19/20</b><span class="leg"><span class="fr">projet de fin d'études</span><span class="en">final-year project</span></span></div>
+        <a class="tuile-b image carte" href="#projet" data-tilt>
+          <span class="duo-j"><img src="projet/cas/VP_radio.jpg" alt="" loading="lazy" width="448" height="448"><img src="projet/cas/VP_cam.jpg" alt="" loading="lazy" width="448" height="448"></span>
+          <span class="sur"><b><span class="fr">Preuve en imagerie médicale</span><span class="en">Medical imaging evidence</span></b><span class="leg">DenseNet-121 · Grad-CAM · AUC 0,976 →</span></span>
+        </a>
+        <div class="tuile-b carte" data-tilt>
+          <span class="logos-j"><span class="tuile"><img src="img/logos/cires_technologies.webp" alt="CIRES Technologies" width="200" height="200" loading="lazy"></span><span class="tuile"><img src="img/logos/ocp_solutions.webp" alt="OCP Solutions" width="200" height="200" loading="lazy"></span></span>
+          <span class="leg"><span class="fr">Vision temps réel · IA évaluée avec rigueur</span><span class="en">Real-time vision · rigorously evaluated AI</span></span>
+        </div>
+        <a class="tuile-b image carte" href="#sante" data-tilt>
+          <img class="fond-j" src="img/evenements/ai_medx_2026_conference.webp" alt="" loading="lazy" width="992" height="1280">
+          <span class="sur"><b><span class="fr">Ouverture à la santé</span><span class="en">Health exposure</span></b><span class="leg">AMIIA HealthTech · GITEX Future Health · AI-MEDX</span></span>
+        </a>
+        <div class="tuile-b carte" data-tilt><b class="gros grad">B2</b><span class="leg"><span class="fr">français · TCF 465 points</span><span class="en">French · TCF 465 points</span></span></div>
+      </div>
+      <div class="cherche">
+        <p class="cherche-titre"><span class="fr">Ce que je viens chercher en master</span><span class="en">What I want from a master's</span></p>
+        <ul>
+          <li><span class="ico" aria-hidden="true">✚</span><span class="fr">Bases médicales</span><span class="en">Medical foundations</span></li>
+          <li><span class="ico" aria-hidden="true">◐</span><span class="fr">Lecture des images</span><span class="en">Image reading</span></li>
+          <li><span class="ico" aria-hidden="true">⇄</span><span class="fr">Données de santé</span><span class="en">Health data</span></li>
+          <li><span class="ico" aria-hidden="true">✓</span><span class="fr">Évaluation clinique</span><span class="en">Clinical evaluation</span></li>
+          <li><span class="ico" aria-hidden="true">◎</span><span class="fr">Recherche</span><span class="en">Research</span></li>
+        </ul>
+        <div class="boutons" style="margin-top:0;justify-content:center">
           <a class="btn plein" href="docs/poster_Lamiae_Andof.pdf"><span class="fr">Poster du projet (PDF)</span><span class="en">Project poster (PDF)</span></a>
           <a class="btn" href="docs/CV_Lamiae_Andof.pdf" download><span class="fr">CV (PDF)</span><span class="en">Resume (PDF)</span></a>
         </div>
@@ -672,9 +696,9 @@
   <div class="texte"><p></p><a class="btn" href="#" target="_blank" rel="noopener" hidden><span class="fr">Ouvrir le PDF</span><span class="en">Open the PDF</span></a></div>
 </div></dialog>
 
-<script src="vendor/gsap.min.js" defer></script>
-<script src="vendor/ScrollTrigger.min.js" defer></script>
-<script src="vendor/lenis.min.js" defer></script>
-<script src="assets/site.js" defer></script>
+<script src="vendor/gsap.min.js?v=5" defer></script>
+<script src="vendor/ScrollTrigger.min.js?v=5" defer></script>
+<script src="vendor/lenis.min.js?v=5" defer></script>
+<script src="assets/site.js?v=5" defer></script>
 </body>
 </html>
