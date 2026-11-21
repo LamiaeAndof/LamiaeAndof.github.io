@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lamiae Andof — IA &amp; santé</title>
+<meta name="description" content="Lamiae Andof, ingénieure d'État en Data Science, Big Data & IA. Je me spécialise en IA appliquée à la santé et à l'imagerie médicale.">
+<meta property="og:title" content="Lamiae Andof — IA & santé">
+<meta property="og:description" content="Ingénieure en IA. Projet phare : IA explicable pour la détection de pneumonie sur radiographies thoraciques.">
+<meta property="og:image" content="https://lamiaeandof.github.io/projet/xray.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314284b'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='17' fill='white' text-anchor='middle'%3ELA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#accueil">Lamiae Andof</a>
+    <nav class="liens" aria-label="Sections">
+      <a href="#parcours"><span class="fr">Parcours</span><span class="en">Journey</span></a>
+      <a href="#experiences"><span class="fr">Expériences</span><span class="en">Experience</span></a>
+      <a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
+      <a href="#engagement"><span class="fr">Engagement</span><span class="en">Involvement</span></a>
+      <a href="#certifications">Certifications</a>
+      <a href="#etudes"><span class="fr">Projet d'études</span><span class="en">Study plan</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="langue" type="button">EN</button>
+  </div>
+</header>
+
+<main>
+<!-- ================= ACCUEIL ================= -->
+<div class="wrap" id="accueil">
+  <div class="hero">
+    <div class="revele">
+      <p class="eyebrow"><span class="fr">IA &amp; santé</span><span class="en">AI &amp; health</span></p>
+      <h1>Lamiae Andof</h1>
+      <p class="titre fr">Ingénieure d'État en Data Science, Big Data &amp; IA. Je me spécialise en IA appliquée à la santé et à l'imagerie médicale.</p>
+      <p class="titre en">State engineer in Data Science, Big Data &amp; AI. I am specialising in AI for health and medical imaging.</p>
+      <p class="lead fr">J'ai appris la vision par ordinateur au port de Tanger Med, puis à évaluer la fiabilité de l'IA chez OCP. Ma conviction : en santé, une IA doit être fiable et explicable, et rester au service des soignants. Mon projet phare montre comment je travaille : mesurer honnêtement, regarder où le modèle se trompe, et dire les limites.</p>
+      <p class="lead en">I learned computer vision at the port of Tanger Med, then how to evaluate AI reliability at OCP. My belief: in health, AI must be reliable, explainable, and serve caregivers. My main project shows how I work: measure honestly, look at where the model fails, and state the limits.</p>
+      <div class="boutons">
+        <a class="btn plein" href="radiographies.html"><span class="fr">Voir le projet radiographies</span><span class="en">See the chest X-ray project</span></a>
+        <a class="btn vide" href="docs/CV_Lamiae_Andof.pdf"><span class="fr">CV (PDF)</span><span class="en">Resume (PDF, French)</span></a>
+      </div>
+    </div>
+    <div class="portrait revele">
+      <img src="img/profil.webp" width="420" height="420" alt="Portrait de Lamiae Andof">
+      <span class="badge"><span class="fr">Fès, Maroc · master visé en 2027</span><span class="en">Fès, Morocco · master's from 2027</span></span>
+    </div>
+  </div>
+
+  <!-- Projet vedette -->
+  <article class="carte vedette revele" aria-labelledby="titre-vedette">
+    <div class="texte">
+      <p class="eyebrow"><span class="fr">Projet phare · 2026</span><span class="en">Main project · 2026</span></p>
+      <h2 id="titre-vedette" style="font-size:clamp(1.5rem,3vw,2rem)"><span class="fr">IA explicable pour la détection de pneumonie sur radiographies thoraciques</span><span class="en">Explainable AI for pneumonia detection on chest X-rays</span></h2>
+      <p class="fr">Un DenseNet-121 évalué sur 624 radiographies d'enfants qu'il n'avait jamais vues, puis expliqué avec Grad-CAM. J'y ai aussi découvert un piège : la forme des images trahissait la classe.</p>
+      <p class="en">A DenseNet-121 tested on 624 children's X-rays it had never seen, then explained with Grad-CAM. I also found a trap: the shape of the images gave away the class.</p>
+      <div class="chiffres" style="margin:18px 0">
+        <div class="chiffre"><div class="val">0,976</div><div class="lib"><span class="fr">AUC sur le test</span><span class="en">test AUC</span></div></div>
+        <div class="chiffre"><div class="val">3 / 390</div><div class="lib"><span class="fr">pneumonies ratées</span><span class="en">missed pneumonias</span></div></div>
+        <div class="chiffre"><div class="val">44 / 234</div><div class="lib"><span class="fr">fausses alertes</span><span class="en">false alarms</span></div></div>
+      </div>
+      <a class="btn plein" href="radiographies.html"><span class="fr">Explorer le projet</span><span class="en">Explore the project</span></a>
+    </div>
+    <div class="image" aria-hidden="true">
+      <img src="projet/cas/VP_radio.jpg" alt="">
+      <img class="cam" src="projet/cas/VP_cam.jpg" alt="">
+    </div>
+  </article>
+</div>
+
+<!-- ================= PARCOURS ================= -->
+<section id="parcours">
+  <div class="wrap">
+    <p class="eyebrow"><span class="fr">Parcours</span><span class="en">Journey</span></p>
+    <h2 class="revele"><span class="fr">De la vision industrielle à l'imagerie médicale</span><span class="en">From industrial vision to medical imaging</span></h2>
+    <p class="muted fr">Cliquez sur une étape. Les étapes en orange sont liées à la santé.</p>
+    <p class="muted en">Click a step. Orange steps are related to health.</p>
+    <div class="frise" role="tablist" aria-label="Frise">
+      <button role="tab" aria-selected="false" aria-controls="e2020"><span class="an">2020</span><span class="t fr">Baccalauréat</span><span class="t en">Baccalaureate</span></button>
+      <button role="tab" aria-selected="false" aria-controls="e2023"><span class="an">2020–2023</span><span class="t fr">Cycle préparatoire</span><span class="t en">Preparatory cycle</span></button>
+      <button role="tab" aria-selected="false" aria-controls="e2024" class="sante"><span class="an">2024</span><span class="t fr">Premier projet sur radiographies</span><span class="t en">First chest X-ray project</span></button>
+      <button role="tab" aria-selected="false" aria-controls="e2025"><span class="an">2025</span><span class="t fr">Vision à Tanger Med</span><span class="t en">Vision at Tanger Med</span></button>
+      <button role="tab" aria-selected="false" aria-controls="e2026a"><span class="an">2026</span><span class="t fr">OCP, Marotrans, GITEX</span><span class="t en">OCP, Marotrans, GITEX</span></button>
+      <button role="tab" aria-selected="false" aria-controls="e2026b"><span class="an">2026</span><span class="t fr">Diplôme d'ingénieure</span><span class="t en">Engineering degree</span></button>
+      <button role="tab" aria-selected="true" aria-controls="e2026c" class="sante"><span class="an">Nov. 2026</span><span class="t fr">AI-MEDX et projet pneumonie</span><span class="t en">AI-MEDX and pneumonia project</span></button>
+      <button role="tab" aria-selected="false" aria-controls="e2027" class="sante"><span class="an">2027</span><span class="t fr">Master en France</span><span class="t en">Master's in France</span></button>
+    </div>
+
+    <div class="etape carte" id="e2020" role="tabpanel" hidden>
+      <h3><span class="fr">Baccalauréat Sciences physiques</span><span class="en">Baccalaureate in physical sciences</span></h3>
+      <p class="fr">Mention Très Bien (16,91/20).</p><p class="en">Highest honours (16.91/20).</p>
+    </div>
+    <div class="etape carte" id="e2023" role="tabpanel" hidden>
+      <h3><span class="fr">Cycle préparatoire intégré, ENSA Tétouan</span><span class="en">Integrated preparatory cycle, ENSA Tétouan</span></h3>
+      <p class="fr">Deux années de bases scientifiques avant le cycle d'ingénieur.</p><p class="en">Scientific foundations before the engineering cycle.</p>
+    </div>
+    <div class="etape carte" id="e2024" role="tabpanel" hidden>
+      <h3><span class="fr">Cycle d'ingénieur et premier contact avec la radiographie</span><span class="en">Engineering cycle and first contact with X-rays</span></h3>
+      <p class="fr">Stage au Ministère de l'Éducation nationale (DSI, Rabat) : un assistant IA pour les enseignants. En mai 2024, le projet Coursera « Detecting COVID-19 with Chest X-Ray using PyTorch » : ma première IA sur des radiographies thoraciques. Le projet pneumonie de 2026 le prolonge.</p>
+      <p class="en">Internship at the Ministry of Education (IT department, Rabat): an AI assistant for teachers. In May 2024, the Coursera project "Detecting COVID-19 with Chest X-Ray using PyTorch": my first AI on chest X-rays. The 2026 pneumonia project builds on it.</p>
+    </div>
+    <div class="etape carte" id="e2025" role="tabpanel" hidden>
+      <h3><span class="fr">Vision par ordinateur en conditions réelles</span><span class="en">Computer vision in real conditions</span></h3>
+      <p class="fr">Visite du GITEX Africa à Marrakech pour le club AI Geeks (avril). Stage chez CIRES Technologies au port de Tanger Med (juillet à septembre) : détection et lecture de plaques en temps réel. Chatbot en français et en darija pour OCP Al Moutmir. Certificat d'excellence du cours Hugging Face sur les agents IA.</p>
+      <p class="en">Visited GITEX Africa in Marrakech for the AI Geeks club (April). Internship at CIRES Technologies, port of Tanger Med (July–September): real-time detection and plate reading. French and Darija chatbot for OCP Al Moutmir. Certificate of excellence, Hugging Face AI Agents course.</p>
+    </div>
+    <div class="etape carte" id="e2026a" role="tabpanel" hidden>
+      <h3><span class="fr">Fiabilité de l'IA, et premier pas dans la santé</span><span class="en">AI reliability, and a first step into health</span></h3>
+      <p class="fr">Projet de fin d'études chez OCP Solutions : un assistant RAG évalué avec rigueur. Mission Data &amp; IA chez Marotrans. En mai, déléguée au GITEX Future Health Africa (Casablanca), où j'ai vu des outils d'IA en radiographie thoracique et en échographie. Membre de la cellule HealthTech de l'AMIIA.</p>
+      <p class="en">Final-year project at OCP Solutions: a RAG assistant, rigorously evaluated. Data &amp; AI assignment at Marotrans. In May, delegate at GITEX Future Health Africa (Casablanca), where I saw AI tools for chest X-ray and ultrasound. Member of AMIIA's HealthTech unit.</p>
+    </div>
+    <div class="etape carte" id="e2026b" role="tabpanel" hidden>
+      <div class="detail-frise">
+        <div>
+          <h3><span class="fr">Ingénieure d'État, Data Science, Big Data &amp; IA</span><span class="en">State engineer, Data Science, Big Data &amp; AI</span></h3>
+          <p class="fr">ENSA Tétouan, Université Abdelmalek Essaâdi, 2023-2026. Mention Bien. Projet de fin d'études : 19/20.</p>
+          <p class="en">ENSA Tétouan, Abdelmalek Essaâdi University, 2023–2026. With honours. Final-year project: 19/20.</p>
+        </div>
+        <div class="photos" data-zoom>
+          <figure><img src="img/parcours/diplomation_2026_big_data_ia.webp" loading="lazy" width="960" height="1280" alt="Diplomation 2026, filière Big Data et IA"><figcaption class="petit"><span class="fr">Diplomation 2026</span><span class="en">Graduation 2026</span></figcaption></figure>
+          <figure><img src="img/parcours/diplomation_2026_campus_ensa_tetouan.webp" loading="lazy" width="960" height="1280" alt="Diplomation 2026, campus de l'ENSA Tétouan"><figcaption class="petit"><span class="fr">Campus de l'ENSA Tétouan</span><span class="en">ENSA Tétouan campus</span></figcaption></figure>
+        </div>
+      </div>
+    </div>
+    <div class="etape carte" id="e2026c" role="tabpanel">
+      <h3><span class="fr">L'IA explicable en médecine</span><span class="en">Explainable AI in medicine</span></h3>
+      <p class="fr">Du 2 au 4 novembre 2026, j'ai participé à AI-MEDX (« AI in Medicine with eXplainability », UM6P Ben Guerir) avec l'AMIIA. Dans la foulée, j'ai mené mon projet d'IA explicable sur radiographies thoraciques.</p>
+      <p class="en">From 2 to 4 November 2026, I attended AI-MEDX ("AI in Medicine with eXplainability", UM6P Ben Guerir) with AMIIA. Right after, I carried out my explainable AI project on chest X-rays.</p>
+      <a href="radiographies.html"><span class="fr">Voir le projet</span><span class="en">See the project</span></a>
+    </div>
+    <div class="etape carte" id="e2027" role="tabpanel" hidden>
+      <h3><span class="fr">Objectif : un master en IA appliquée à la santé</span><span class="en">Goal: a master's in AI for health</span></h3>
+      <p class="fr">En France, à la rentrée 2027, pour acquérir les bases cliniques qui me manquent.</p>
+      <p class="en">In France, from autumn 2027, to gain the clinical knowledge I still lack.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPÉRIENCES ================= -->
+<section id="experiences">
+  <div class="wrap">
+    <p class="eyebrow"><span class="fr">Expériences</span><span class="en">Experience</span></p>
+    <h2 class="revele"><span class="fr">Ce que j'ai construit en entreprise</span><span class="en">What I built in companies</span></h2>
+    <div class="grille g3">
+      <article class="carte exp revele">
+        <h3><span class="fr">Ingénieure IA, projet de fin d'études</span><span class="en">AI engineer, final-year project</span></h3>
+        <div class="lieu">OCP Solutions (Groupe OCP), Casablanca · <span class="fr">févr. à juin 2026</span><span class="en">Feb.–June 2026</span></div>
+        <dl>
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Répondre aux questions des équipes à partir des documents internes, en citant ses sources.</span><span class="en">Answer staff questions from internal documents, with sources.</span></dd>
+          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Un assistant IA (RAG) livré en SDK Python réutilisable, et une étude exploratoire de GraphRAG pour une version 2 (non implémentée).</span><span class="en">A RAG assistant delivered as a reusable Python SDK, plus an exploratory study of GraphRAG for a version 2 (not implemented).</span></dd>
+          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Fidélité des réponses de 71 % à 89 % ; traçabilité des sources de 52 % à 96 %.</span><span class="en">Answer faithfulness from 71% to 89%; source traceability from 52% to 96%.</span></dd>
+        </dl>
+      </article>
+      <article class="carte exp revele">
+        <h3><span class="fr">Chargée de mission Data &amp; IA</span><span class="en">Data &amp; AI officer</span></h3>
+        <div class="lieu">Marotrans, <span class="fr">transport routier</span><span class="en">road transport</span>, Casablanca · <span class="fr">mars à sept. 2026</span><span class="en">Mar.–Sept. 2026</span></div>
+        <dl>
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Environ 1 h de saisie manuelle par jour pour suivre la flotte.</span><span class="en">About 1 hour of manual data entry per day to track the fleet.</span></dd>
+          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Une plateforme de suivi de 182 véhicules avec tableau de bord.</span><span class="en">A tracking platform for 182 vehicles with a dashboard.</span></dd>
+          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Export en un clic au lieu de la saisie quotidienne.</span><span class="en">One-click export instead of daily manual entry.</span></dd>
+        </dl>
+      </article>
+      <article class="carte exp revele">
+        <h3><span class="fr">Stagiaire ingénieure Computer Vision</span><span class="en">Computer vision engineering intern</span></h3>
+        <div class="lieu">CIRES Technologies, Digital Factory, <span class="fr">port de Tanger Med</span><span class="en">port of Tanger Med</span> · <span class="fr">juil. à sept. 2025</span><span class="en">July–Sept. 2025</span></div>
+        <dl>
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Détecter les véhicules et lire leurs plaques en temps réel.</span><span class="en">Detect vehicles and read their plates in real time.</span></dd>
+          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Une base de plus de 10 000 images annotées ; des modèles de détection (YOLOv5) et de lecture (OCR).</span><span class="en">A dataset of over 10,000 annotated images; detection (YOLOv5) and reading (OCR) models.</span></dd>
+          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt><dd><span class="fr">Précision : 95,7 % (véhicules), 98 % (plaques), 96,6 % (OCR), en temps réel.</span><span class="en">Precision: 95.7% (vehicles), 98% (plates), 96.6% (OCR), in real time.</span></dd>
+        </dl>
+      </article>
+      <article class="carte exp revele">
+        <h3>OCP Al Moutmir</h3>
+        <div class="lieu"><span class="fr">À distance · juil. à août 2025</span><span class="en">Remote · July–Aug. 2025</span></div>
+        <dl>
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Répondre aux agriculteurs dans leur langue.</span><span class="en">Answer farmers in their own language.</span></dd>
+          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Un chatbot en français et en darija.</span><span class="en">A chatbot in French and Darija.</span></dd>
+        </dl>
+      </article>
+      <article class="carte exp revele">
+        <h3><span class="fr">Ministère de l'Éducation nationale</span><span class="en">Ministry of Education</span></h3>
+        <div class="lieu"><span class="fr">DSI, Rabat · juil. à sept. 2024</span><span class="en">IT department, Rabat · July–Sept. 2024</span></div>
+        <dl>
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt><dd><span class="fr">Aider les enseignants dans leur travail.</span><span class="en">Support teachers in their work.</span></dd>
+          <dt><span class="fr">Ce que j'ai fait</span><span class="en">What I did</span></dt><dd><span class="fr">Un assistant IA pour les enseignants.</span><span class="en">An AI assistant for teachers.</span></dd>
+        </dl>
+      </article>
+      <article class="carte revele">
+        <h3><span class="fr">Compétences</span><span class="en">Skills</span></h3>
+        <ul class="puces">
+          <li>PyTorch</li><li>CNN</li><li>YOLOv5</li><li>Transformers</li><li>Grad-CAM</li><li>SHAP</li><li>LIME</li><li>LLM</li><li>RAG</li>
+          <li>Python</li><li>SQL</li><li>Pandas</li><li>Scikit-learn</li><li>FastAPI</li><li>Docker</li><li>Git</li>
+        </ul>
+        <p class="petit muted" style="margin-top:14px"><span class="fr">Langues : français B2 (TCF, 465 points), anglais intermédiaire, arabe langue maternelle.</span><span class="en">Languages: French B2 (TCF, 465 points), intermediate English, native Arabic.</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJETS ================= -->
+<section id="projets">
+  <div class="wrap">
+    <p class="eyebrow"><span class="fr">Projets</span><span class="en">Projects</span></p>
+    <h2 class="revele"><span class="fr">Deux projets, une même question : des données humaines utiles et fiables</span><span class="en">Two projects, one question: useful and reliable human data</span></h2>
+
+    <article class="carte revele" style="margin-bottom:22px">
+      <div class="grille g2" style="align-items:center">
+        <div>
+          <span class="statut ok"><span class="fr">Terminé · novembre 2026</span><span class="en">Completed · November 2026</span></span>
+          <h3 style="margin-top:10px"><span class="fr">IA explicable pour la détection de pneumonie sur radiographies thoraciques</span><span class="en">Explainable AI for pneumonia detection on chest X-rays</span></h3>
+          <p class="fr">DenseNet-121, découpage par patient, métriques médicales avec intervalles de confiance, Grad-CAM sur les réussites et les erreurs. Il prolonge mon projet Coursera de 2024 sur la COVID-19.</p>
+          <p class="en">DenseNet-121, patient-level split, medical metrics with confidence intervals, Grad-CAM on successes and errors. It extends my 2024 Coursera project on COVID-19.</p>
+          <ul class="puces"><li>PyTorch</li><li>DenseNet-121</li><li>Grad-CAM</li><li>scikit-learn</li></ul>
+          <div class="boutons">
+            <a class="btn plein" href="radiographies.html"><span class="fr">Page du projet</span><span class="en">Project page</span></a>
+            <a class="btn vide" href="https://github.com/LamiaeAndof/chest-xray-explainable-ai">GitHub</a>
+          </div>
+        </div>
+        <figure><img src="projet/cas/FP_cam.jpg" loading="lazy" width="448" height="448" alt="Carte Grad-CAM d'une fausse alerte" style="max-width:340px;margin-inline:auto"></figure>
+      </div>
+    </article>
+
+    <article class="carte revele" id="onzevue">
+      <span class="statut encours"><span class="fr">Projet personnel en cours · 2026</span><span class="en">Ongoing personal project · 2026</span></span>
+      <h3 style="margin-top:10px">ONZEVUE</h3>
+      <p class="fr">Une plateforme de suivi de la charge et de la performance des joueurs de football, développée en collaboration avec un étudiant en Master STAPS. J'y apprends à transformer des données humaines en informations utiles à la décision.</p>
+      <p class="en">A platform to monitor the training load and performance of football players, built with a sports-science (STAPS) master's student. I am learning to turn human data into information that supports decisions.</p>
+      <div class="grille g2" style="margin-top:6px">
+        <div>
+          <h3 style="font-size:1rem"><span class="fr">Ce qui fonctionne (prototype, données fictives)</span><span class="en">What works (prototype, fictional data)</span></h3>
+          <ul class="liste fr">
+            <li>Tableau de bord du staff : charge interne (durée × RPE), distance GPS, atteinte des cibles.</li>
+            <li>Vue du microcycle.</li>
+            <li>Fiche joueur avec une recommandation expliquée (« Pourquoi ? »), à valider par le staff.</li>
+            <li>Saisie du wellness : une donnée de santé jamais transmise au modèle d'IA.</li>
+            <li>Import de fichiers GPS (CSV, Excel).</li>
+          </ul>
+          <ul class="liste en">
+            <li>Staff dashboard: internal load (duration × RPE), GPS distance, target achievement.</li>
+            <li>Microcycle view.</li>
+            <li>Player profile with an explained recommendation ("Why?"), to be validated by staff.</li>
+            <li>Wellness entry: health data never sent to the AI model.</li>
+            <li>GPS file import (CSV, Excel).</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:1rem"><span class="fr">En cours de développement</span><span class="en">In development</span></h3>
+          <ul class="liste fr"><li>Connexion directe aux appareils via API.</li><li>Modèles de prédiction de la charge.</li></ul>
+          <ul class="liste en"><li>Direct connection to devices through APIs.</li><li>Load prediction models.</li></ul>
+        </div>
+      </div>
+      <div class="captures" data-zoom style="margin-top:18px">
+        <figure><img src="img/onzevue/onzevue_tableau_de_bord.webp" loading="lazy" width="1400" height="875" alt="ONZEVUE : tableau de bord du staff"><figcaption><span class="fr">Tableau de bord du staff (données fictives)</span><span class="en">Staff dashboard (fictional data)</span></figcaption></figure>
+        <div class="grille g2">
+          <figure><img src="img/onzevue/onzevue_fiche_joueur.webp" loading="lazy" width="1337" height="497" alt="ONZEVUE : fiche joueur"><figcaption><span class="fr">Fiche joueur et recommandation expliquée</span><span class="en">Player profile and explained recommendation</span></figcaption></figure>
+          <figure><img src="img/onzevue/onzevue_charges_wellness.webp" loading="lazy" width="1322" height="565" alt="ONZEVUE : charges et wellness"><figcaption><span class="fr">Charges et saisie du wellness</span><span class="en">Load and wellness entry</span></figcaption></figure>
+          <figure><img src="img/onzevue/onzevue_import_gps.webp" loading="lazy" width="1360" height="527" alt="ONZEVUE : import GPS"><figcaption><span class="fr">Import des fichiers GPS</span><span class="en">GPS file import</span></figcaption></figure>
+          <figure><img src="img/onzevue/onzevue_accueil.webp" loading="lazy" width="1005" height="536" alt="ONZEVUE : accueil"><figcaption><span class="fr">Accueil</span><span class="en">Home</span></figcaption></figure>
+        </div>
+      </div>
+    </article>
+
+    <div class="grille g2" style="margin-top:22px">
+      <article class="carte revele"><h3><span class="fr">Détection d'absences et de fraude par vision</span><span class="en">Vision-based absence and fraud detection</span></h3><p class="muted fr">Projet académique. Modèle de vision avec IA explicable (SHAP, LIME).</p><p class="muted en">Academic project. Vision model with explainable AI (SHAP, LIME).</p></article>
+      <article class="carte revele"><h3><span class="fr">Détection multimodale d'émotions</span><span class="en">Multimodal emotion detection</span></h3><p class="muted fr">Projet académique. Analyse conjointe de la vidéo, de l'audio et du texte.</p><p class="muted en">Academic project. Joint analysis of video, audio and text.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENGAGEMENT ================= -->
+<section id="engagement">
+  <div class="wrap">
+    <p class="eyebrow"><span class="fr">Engagement &amp; IA santé</span><span class="en">Involvement &amp; AI in health</span></p>
+    <h2 class="revele"><span class="fr">Aller voir l'IA en santé de près</span><span class="en">Seeing AI in health up close</span></h2>
+    <div class="grille g3" style="margin-bottom:26px">
+      <div class="carte revele"><h3>AMIIA</h3><p class="fr">Membre de la cellule HealthTech de l'Association Marocaine pour l'Innovation en Intelligence Artificielle.</p><p class="en">Member of the HealthTech unit of the Moroccan Association for Innovation in Artificial Intelligence.</p></div>
+      <div class="carte revele"><h3>AI Geeks, ENSA Tétouan</h3><p class="fr">Co-fondatrice du club. Certificat de leadership pour l'organisation de l'événement AI Geeks × Microsoft Moroccan Community.</p><p class="en">Co-founder of the club. Leadership certificate for organising the AI Geeks × Microsoft Moroccan Community event.</p></div>
+      <div class="carte revele"><h3>ENACTUS</h3><p class="fr">Cheffe de projet.</p><p class="en">Project lead.</p></div>
+    </div>
+    <div class="galerie" data-zoom>
+      <figure><img src="img/evenements/ai_medx_2026_conference.webp" loading="lazy" width="992" height="1280" alt="AI-MEDX 2026"><figcaption><span class="fr">AI-MEDX 2026, UM6P Ben Guerir, 2-4 novembre 2026</span><span class="en">AI-MEDX 2026, UM6P Ben Guerir, 2–4 November 2026</span></figcaption></figure>
+      <figure><img src="img/evenements/ai_medx_2026_annonce_amiia.webp" loading="lazy" width="1200" height="1200" alt="Annonce AMIIA pour AI-MEDX 2026"><figcaption><span class="fr">Participation à AI-MEDX 2026 avec l'AMIIA</span><span class="en">Attending AI-MEDX 2026 with AMIIA</span></figcaption></figure>
+      <figure><img src="img/evenements/ai_medx_2026_certificat.webp" loading="lazy" width="1200" height="900" alt="Certificat de participation AI-MEDX 2026"><figcaption><span class="fr">Certificat de participation, AI-MEDX 2026</span><span class="en">Certificate of participation, AI-MEDX 2026</span></figcaption></figure>
+      <figure><img src="img/evenements/gitex_future_health_2026_siemens_radiographie_ia.webp" loading="lazy" width="961" height="1280" alt="Stand d'IA en radiographie thoracique"><figcaption><span class="fr">GITEX Future Health Africa, Casablanca, mai 2026 : IA en radiographie thoracique</span><span class="en">GITEX Future Health Africa, Casablanca, May 2026: AI for chest X-ray</span></figcaption></figure>
+      <figure><img src="img/evenements/gitex_future_health_2026_fusion_ai_echographie.webp" loading="lazy" width="591" height="960" alt="Stand d'IA en échographie"><figcaption><span class="fr">GITEX Future Health Africa, mai 2026 : IA en échographie</span><span class="en">GITEX Future Health Africa, May 2026: AI for ultrasound</span></figcaption></figure>
+      <figure><img src="img/evenements/gitex_future_health_2026_badge.webp" loading="lazy" width="853" height="1280" alt="Badge de déléguée GITEX Future Health Africa 2026"><figcaption><span class="fr">Déléguée, GITEX Future Health Africa, 4-6 mai 2026</span><span class="en">Delegate, GITEX Future Health Africa, 4–6 May 2026</span></figcaption></figure>
+      <figure><img src="img/evenements/gitex_africa_2025_photo.webp" loading="lazy" width="960" height="1280" alt="GITEX Africa 2025"><figcaption><span class="fr">GITEX Africa, Marrakech, 14-16 avril 2025</span><span class="en">GITEX Africa, Marrakech, 14–16 April 2025</span></figcaption></figure>
+      <figure><img src="img/evenements/gitex_africa_2025_badge.webp" loading="lazy" width="960" height="1280" alt="Badge GITEX Africa 2025"><figcaption><span class="fr">Visiteuse au nom du club AI Geeks, avril 2025</span><span class="en">Visitor on behalf of the AI Geeks club, April 2025</span></figcaption></figure>
+      <figure><img src="img/parcours/ai_geeks_evenement_ensa_tetouan.webp" loading="lazy" width="960" height="1280" alt="Événement AI Geeks à l'ENSA Tétouan"><figcaption><span class="fr">Événement du club AI Geeks, ENSA Tétouan</span><span class="en">AI Geeks club event, ENSA Tétouan</span></figcaption></figure>
+      <figure><img src="img/parcours/ai_geeks_interview_press_tetouan.webp" loading="lazy" width="853" height="1280" alt="Interview à Press Tétouan"><figcaption><span class="fr">Interview accordée à Press Tétouan lors d'un événement du club</span><span class="en">Interview with Press Tétouan during a club event</span></figcaption></figure>
+      <figure><img src="img/parcours/ai_geeks_badge_portrait.webp" loading="lazy" width="822" height="1280" alt="Badge AI Geeks"><figcaption><span class="fr">Co-fondatrice du club AI Geeks</span><span class="en">Co-founder of the AI Geeks club</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications">
+  <div class="wrap">
+    <p class="eyebrow">Certifications</p>
+    <h2 class="revele"><span class="fr">Certificats (cliquez pour ouvrir le PDF)</span><span class="en">Certificates (click to open the PDF)</span></h2>
+    <div class="certifs">
+      <a class="certif vedette-c revele" href="docs/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.pdf"><img src="img/certificats/coursera_pytorch_detection_covid19_radiographie_thoracique_2024.webp" loading="lazy" width="900" height="695" alt="Certificat Coursera : Detecting COVID-19 with Chest X-Ray using PyTorch"><div class="txt"><b>Detecting COVID-19 with Chest X-Ray using PyTorch</b><span>Coursera Project Network · <span class="fr">18 mai 2024 · ma première IA sur radiographies</span><span class="en">18 May 2024 · my first AI on X-rays</span></span></div></a>
+      <a class="certif revele" href="docs/certificats/hugging_face_ai_agents_course_excellence_2025.pdf"><img src="img/certificats/hugging_face_ai_agents_course_excellence_2025.webp" loading="lazy" width="900" height="636" alt="Certificat Hugging Face Agents Course"><div class="txt"><b>Certificate of Excellence, AI Agents Course</b><span>Hugging Face · <span class="fr">19 septembre 2025</span><span class="en">19 September 2025</span></span></div></a>
+      <a class="certif revele" href="docs/certificats/coursera_overview_data_visualization_2024.pdf"><img src="img/certificats/coursera_overview_data_visualization_2024.webp" loading="lazy" width="900" height="695" alt="Certificat Coursera Overview of Data Visualization"><div class="txt"><b>Overview of Data Visualization</b><span>Coursera Project Network · <span class="fr">18 mai 2024</span><span class="en">18 May 2024</span></span></div></a>
+      <a class="certif revele" href="docs/certificats/coursera_power_bi_storytelling_2024.pdf"><img src="img/certificats/coursera_power_bi_storytelling_2024.webp" loading="lazy" width="900" height="695" alt="Certificat Coursera Power BI"><div class="txt"><b>Data Visualization with Power BI: Storytelling with Data</b><span>Coursera Project Network · <span class="fr">6 mai 2024</span><span class="en">6 May 2024</span></span></div></a>
+      <a class="certif revele" href="docs/certificats/ai_geeks_certificat_leadership_ensa_microsoft.pdf"><img src="img/certificats/ai_geeks_certificat_leadership_ensa_microsoft.webp" loading="lazy" width="900" height="633" alt="Certificat de leadership AI Geeks"><div class="txt"><b>Certificate of Leadership</b><span>AI Geeks / ENSA Tétouan · <span class="fr">événement AI Geeks × Microsoft Moroccan Community</span><span class="en">AI Geeks × Microsoft Moroccan Community event</span></span></div></a>
+      <a class="certif revele" href="docs/certificats/ai_geeks_certificat_excellence_github_copilot.pdf"><img src="img/certificats/ai_geeks_certificat_excellence_github_copilot.webp" loading="lazy" width="900" height="633" alt="Certificat d'excellence GitHub Copilot"><div class="txt"><b>Certificate of Excellence</b><span>AI Geeks / ENSA Tétouan · <span class="fr">sessions « GitHub Copilot Usecases »</span><span class="en">"GitHub Copilot Usecases" sessions</span></span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJET D'ÉTUDES ================= -->
+<section id="etudes">
+  <div class="wrap grille g2" style="align-items:start">
+    <div class="revele">
+      <p class="eyebrow"><span class="fr">Mon projet d'études</span><span class="en">My study plan</span></p>
+      <h2><span class="fr">Un master en IA appliquée à la santé et à l'imagerie médicale</span><span class="en">A master's in AI for health and medical imaging</span></h2>
+      <p class="fr">Je souhaite acquérir les bases du domaine médical et me spécialiser en IA appliquée à la santé et à l'imagerie médicale, en France, à la rentrée 2027. Mon but : concevoir des outils fiables et explicables au service des soignants.</p>
+      <p class="en">I want to learn the foundations of medicine and specialise in AI for health and medical imaging, in France, from autumn 2027. My goal: build reliable, explainable tools that serve caregivers.</p>
+    </div>
+    <div class="carte revele">
+      <h3><span class="fr">Ce qui me manque encore</span><span class="en">What I still lack</span></h3>
+      <ul class="liste fr">
+        <li>Savoir lire une image médicale.</li>
+        <li>Comprendre le parcours de soin.</li>
+        <li>Connaître les contraintes réglementaires.</li>
+      </ul>
+      <ul class="liste en">
+        <li>Reading a medical image.</li>
+        <li>Understanding the care pathway.</li>
+        <li>Knowing the regulatory constraints.</li>
+      </ul>
+      <p class="muted petit fr" style="margin-top:12px">Mon projet radiographies me l'a montré : sans connaissance clinique, je ne peux pas dire si une fausse alerte vient du modèle ou de l'image.</p>
+      <p class="muted petit en" style="margin-top:12px">My X-ray project showed me this: without clinical knowledge, I cannot tell whether a false alarm comes from the model or from the image.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap contact revele">
+    <img src="img/profil.webp" width="120" height="120" alt="" loading="lazy">
+    <div>
+      <h2>Contact</h2>
+      <div class="boutons" style="margin-top:8px">
+        <a class="btn plein" href="https://github.com/LamiaeAndof">GitHub</a>
+        <a class="btn plein" href="https://www.linkedin.com/in/lamiaeandof">LinkedIn</a>
+        <a class="btn vide" href="docs/CV_Lamiae_Andof.pdf" download><span class="fr">Télécharger mon CV</span><span class="en">Download my resume (French)</span></a>
+        <a class="btn vide" href="docs/poster_Lamiae_Andof.pdf"><span class="fr">Poster du projet</span><span class="en">Project poster (French)</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fr">© 2026 Lamiae Andof. Le projet radiographies est pédagogique : ce n'est pas un outil de diagnostic.</p>
+    <p class="en">© 2026 Lamiae Andof. The X-ray project is educational: it is not a diagnostic tool.</p>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
